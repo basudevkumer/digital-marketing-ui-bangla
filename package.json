@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "flowbite": "^4.0.1",
+    "tailwindcss": "^4.2.1"
+  },
+  "name": "digital-marketing-ui",
+  "version": "1.0.0",
+  "description": "A modern and responsive Digital Marketing landing page built using Tailwind CSS, focusing on clean layout and user-friendly design.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basudevkumer/digital-marketing-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/basudevkumer/digital-marketing-ui/issues"
+  },
+  "homepage": "https://github.com/basudevkumer/digital-marketing-ui#readme"
+}
