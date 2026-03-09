@@ -1,22 +1,38 @@
 // for accordion
 
-document.querySelectorAll(".pm-accordion button").forEach((button) => {
-
-  const icon = button.querySelector(".pm-icon");
-  const targetId = button.getAttribute("data-accordion-target");
-  const target = document.querySelector(targetId);
-
+document.querySelectorAll(".faqbutton").forEach((button) => {
   button.addEventListener("click", () => {
 
-    const isHidden = target.classList.contains("hidden");
+    // icon change
+    const icon = button.querySelector(".faqPlus i");
+    icon.classList.toggle("fa-plus");
+    icon.classList.toggle("fa-minus");
 
-    target.classList.toggle("hidden");
-
-    icon.textContent = isHidden ? "-" : "+";
+    // parent border change
+    const parent = button.closest('[data-accordion="collapse"]');
+    parent.classList.toggle("border-transparent");
+    parent.classList.toggle("border-[#4285FA]");
 
   });
-
 });
+
+// document.querySelectorAll(".pm-accordion button").forEach((button) => {
+
+//   const icon = button.querySelector(".pm-icon");
+//   const targetId = button.getAttribute("data-accordion-target");
+//   const target = document.querySelector(targetId);
+
+//   button.addEventListener("click", () => {
+
+//     const isHidden = target.classList.contains("hidden");
+
+//     target.classList.toggle("hidden");
+
+//     icon.textContent = isHidden ? "-" : "+";
+
+//   });
+
+// });
 
 document.querySelectorAll("[data-accordion-icon]").forEach((icon) => {
   const button = icon.closest("button");

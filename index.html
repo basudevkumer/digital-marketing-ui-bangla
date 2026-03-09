@@ -1,220 +1,1763 @@
 <!doctype html>
 <html>
-<!-- <head> -->
+  <!-- <head> -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Google Fonts Start  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <!-- Google Fonts End  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-  <link href="./src/output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./src/input.css" />
-  <link rel="stylesheet" href="./src/all.min.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts Start  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts End  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/input.css" />
+    <link rel="stylesheet" href="./src/all.min.css" />
+  </head>
 
-<!-- </head> -->
+  <!-- </head> -->
 
-<body>
-  <!-- Header Part start  {moazzem} -->
-  <nav class="pt-5 pb-7 bg-white shadow-md relative group">
-    <div class="max-w-[1140px] mx-auto px-3 xl:px-0">
-      <div class="flex flex-row justify-between items-center">
-        <div class="z-30">
-          <a href="#"><img src="src/images/Logo.png" alt="Logo.png" class="h-[62px] w-[218px]" /></a>
-        </div>
+  <body>
+    <!-- Header Part start  {moazzem} -->
+    <nav class="pt-5 pb-7 bg-white shadow-md relative group">
+      <div class="max-w-[1140px] mx-auto px-3 xl:px-0">
+        <div class="flex flex-row justify-between items-center">
+          <div class="z-30">
+            <a href="#"
+              ><img
+                src="src/images/Logo.png"
+                alt="Logo.png"
+                class="h-[62px] w-[218px]"
+            /></a>
+          </div>
 
-        <div class="lg:hidden z-30">
-          <input type="checkbox" id="menu-toggle" class="hidden peer" />
-          <label for="menu-toggle"
-            class="cursor-pointer text-2xl text-[#1E1E1F] p-2 hover:bg-gray-100 rounded-full transition-all">
-            <i class="fa-solid fa-bars-staggered"></i></label>
+          <div class="lg:hidden z-30">
+            <input type="checkbox" id="menu-toggle" class="hidden peer" />
+            <label
+              for="menu-toggle"
+              class="cursor-pointer text-2xl text-[#1E1E1F] p-2 hover:bg-gray-100 rounded-full transition-all"
+            >
+              <i class="fa-solid fa-bars-staggered"></i
+            ></label>
 
-          <div
-            class="absolute top-full right-[0%] w-full bg-white shadow-xl rounded-b-xl border border-gray-100 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible lg:hidden transition-all duration-300 transform origin-top-right scale-95 peer-checked:scale-100 z-20">
-            <ul class="flex flex-col items-center p-4 gap-y-4  font-semibold text-base text-[#1E1E1F]">
-              <li><a href="#" class="pb-2">হোম</a></li>
-              <li><a href="#" class="pb-2">আমাদের সম্পর্কে</a></li>
-              <li><a href="#" class="pb-2">ব্লগ</a></li>
-              <li><a href="#" class="pb-2">যোগাযোগ</a></li>
-              <li><a href="#" class="pb-2">কোর্স</a></li>
+            <div
+              class="absolute top-full right-[0%] w-full bg-white shadow-xl rounded-b-xl border border-gray-100 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible lg:hidden transition-all duration-300 transform origin-top-right scale-95 peer-checked:scale-100 z-20"
+            >
+              <ul
+                class="flex flex-col items-center p-4 gap-y-4 font-semibold text-base text-[#1E1E1F]"
+              >
+                <li><a href="#" class="pb-2">হোম</a></li>
+                <li><a href="#" class="pb-2">আমাদের সম্পর্কে</a></li>
+                <li><a href="#" class="pb-2">ব্লগ</a></li>
+                <li><a href="#" class="pb-2">যোগাযোগ</a></li>
+                <li><a href="#" class="pb-2">কোর্স</a></li>
+                <li>
+                  <button
+                    class="w-full h-10 bg-[#4285FA] text-white font-semibold text-sm rounded hover:bg-black transition-all px-4"
+                  >
+                    এনরোল করুন <i class="fa-solid fa-arrow-right-long ml-1"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden lg:flex items-center gap-x-50">
+            <ul class="flex gap-x-10 font-semibold text-base text-[#1E1E1F]">
               <li>
-                <button
-                  class="w-full h-10 bg-[#4285FA] text-white font-semibold  text-sm rounded hover:bg-black transition-all px-4">
-                  এনরোল করুন <i class="fa-solid fa-arrow-right-long ml-1"></i>
-                </button>
+                <a
+                  href="#"
+                  class="hover:text-[#4285FA] transition-all relative duration-300"
+                  >হোম
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#4285FA] transition-all"
+                  >আমাদের সম্পর্কে</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#4285FA] transition-all">ব্লগ</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#4285FA] transition-all"
+                  >যোগাযোগ</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#4285FA] transition-all"
+                  >কোর্স</a
+                >
               </li>
             </ul>
+            <button
+              class="px-6 h-11 bg-[#4285FA] text-white font-semibold text-base rounded-[10px]"
+            >
+              <a href="#"
+                >এনরোল করুন <i class="fa-solid fa-arrow-right-long ml-1"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Header Part End  {maozzem} -->
+
+    <!-- Banner part (Saimum) -->
+    <section
+      class="bg-cover bg-no-repeat bg-center"
+      style="background-image: url(./src/images/banner-bg.png)"
+    >
+      <div class="max-w-[1140px] mx-auto px-5 py-16 lg:py-[48px]">
+        <!-- Responsive Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Left Side -->
+          <div class="text-center lg:text-left">
+            <p
+              class="px-3 py-2 inline-block rounded-2xl shadow-lg lg:shadow-none bg-white text-sm"
+            >
+              <i class="fa-solid fa-fire text-yellow-400"></i>
+              কিছু ওভারলাইন মানানসই টেক্সট এখানে থাকবে
+            </p>
+
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold py-6 leading-tight"
+            >
+              ডিজিটাল মার্কেটিং
+              <span class="text-blue-500">-এর জন্য টাইটেল</span>
+            </h1>
+
+            <!-- Small CTA Tags -->
+            <div
+              class="flex flex-wrap justify-center lg:justify-start gap-3 mb-6"
+            >
+              <a
+                href="#"
+                class="bg-green-100 text-green-700 border border-green-300 px-4 py-2 rounded-[10px] font-semibold hover:bg-green-200 transition text-sm"
+              >
+                বাটন লেবেল <i class="fa-solid fa-display"></i>
+              </a>
+
+              <a
+                href="#"
+                class="bg-yellow-100 text-yellow-600 border border-yellow-300 px-4 py-2 rounded-[10px] font-semibold hover:bg-yellow-200 transition duration-200 text-sm"
+              >
+                বাটন লেবেল <i class="fa-solid fa-user-group"></i>
+              </a>
+
+              <a
+                href="#"
+                class="bg-red-100 text-red-500 border border-red-300 px-4 py-2 rounded-[10px] font-semibold hover:bg-red-200 transition text-sm"
+              >
+                বাটন লেবেল <i class="fa-solid fa-crown"></i>
+              </a>
+            </div>
+
+            <p class="text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">
+              লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট
+              ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট
+              ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
+              ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট
+              কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট।
+              ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস।
+            </p>
+
+            <!-- Main Buttons -->
+            <div
+              class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4"
+            >
+              <button
+                class="px-8 py-3 rounded-xl bg-blue-500 hover:bg-blue-700 text-white tra"
+              >
+                আপ্লাই করুন ৪০% ডিসকাউন্ট <i class="fa-solid fa-crown"></i>
+              </button>
+
+              <button
+                class="px-6 py-3 rounded-xl bg-black hover:bg-[#1a1a1a] text-white tra"
+              >
+                কারিকুলাম ডাউনলোড করুন <i class="fa-solid fa-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="flex w-full justify-center lg:justify-end">
+            <div
+              class="p-[2px] w-[461px] relative rounded-lg overflow-hidden z-20"
+            >
+              <div
+                class="bg-[#F88513] animate-rounded1 right-[-50px] -top-1/2 translate-y-1/2 blur-xl absolute w-[200px] h-[300px] lg:w-[300px] lg:h-[400px] z-[-1]"
+              ></div>
+              <div
+                class="bg-[#34A853] animate-rounded2 left-0 -bottom-1/2 -translate-1/2 blur-xl absolute h-[300px] w-[300px] lg:w-[380px] lg:h-[380px] z-[-1]"
+              ></div>
+
+              <div
+                class="bg-white w-full rounded-lg shadow-xl p-6 sm:p-8 border border-gray-200"
+              >
+                <!-- Input Box Here -->
+
+                <h2 class="text-xl sm:text-2xl font-bold text-center mb-2">
+                  আপনার আসন এখনই নিশ্চিত করুন
+                </h2>
+
+                <p class="text-gray-500 text-center mb-6 text-sm">
+                  আপনার পেশাদার ক্যারিয়ার বিনামূল্যে শুরু করুন
+                </p>
+
+                <!-- Form -->
+                <div class="space-y-4">
+                  <!-- Full Name -->
+                  <div>
+                    <label class="text-sm font-medium text-gray-600"
+                      >আপনার পুরো নাম</label
+                    >
+                    <div class="relative mt-1">
+                      <span
+                        class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                      >
+                        <i class="fa-regular fa-user"></i>
+                      </span>
+                      <input
+                        type="text"
+                        placeholder="এখানে লিখুন "
+                        class="w-full pl-10 pr-4 py-3 rounded-lg bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Phone -->
+                  <div>
+                    <label class="text-sm font-medium text-gray-600"
+                      >ফোন নম্বর</label
+                    >
+                    <div class="relative mt-1">
+                      <span
+                        class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                      >
+                        <i class="fa-solid fa-phone"></i>
+                      </span>
+                      <input
+                        type="text"
+                        placeholder="এখানে লিখুন"
+                        class="w-full pl-10 pr-4 py-3 rounded-lg bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition"
+                      />
+                    </div>
+                  </div>
+                  <!-- Email -->
+                  <div>
+                    <label class="text-sm font-medium text-gray-600"
+                      >ইমেইল ঠিকানা (ঐচ্ছিক)</label
+                    >
+                    <div class="relative mt-1">
+                      <span
+                        class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                      >
+                        <i class="fa-regular fa-envelope"></i>
+                      </span>
+                      <input
+                        type="email"
+                        placeholder="এখানে লিখুন"
+                        class="w-full pl-10 pr-4 py-3 rounded-lg bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Career Goals -->
+                  <div>
+                    <label class="text-sm font-medium text-gray-600"
+                      >আপনার সেশন বেছে নিন</label
+                    >
+                    <div class="relative mt-1">
+                      <span
+                        class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                      >
+                        <i class="fa-solid fa-briefcase"></i>
+                      </span>
+                      <input
+                        type="text"
+                        placeholder="সেশন নির্বাচন করুন"
+                        class="w-full pl-10 pr-4 py-3 rounded-lg bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                  class="w-full mt-6 bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+                >
+                  আমার আসন বুক করুন <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+
+                <p class="text-center text-gray-400 text-xs mt-4">
+                  এখানে কিছু মানানসই টেক্সট থাকবে
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner part (Saimum) -->
+
+    <!-- promotional video{Mahir} -->
+    <section class="py-[60px] lg:pb-[140px] overflow-hidden">
+      <div class="max-w-[1140px] mx-auto px-3 lg:px-0">
+        <div>
+          <h2
+            class="text-[#1E1E1F] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%] font-extrabold text-center px-4"
+          >
+            এখানে প্রচারমূলক <span class="text-[#4285FA]">ভিডিও থাকবে</span>
+          </h2>
+
+          <p
+            class="w-full lg:w-[809px] text-sm sm:text-base md:text-lg leading-[150%] text-center mx-auto text-[#38435C] mt-4 mb-6 sm:mb-8 px-4"
+          >
+            লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট
+            ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট
+            ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
+            ডিয়াম ডিয়াম টেলুস আলট্রিসিস.
+          </p>
+
+          <div
+            class="relative w-full max-w-[1170px] mx-auto aspect-video mb-8 sm:mb-12 px-4"
+          >
+            <img
+              src="./src/images/Group 22.png"
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[641px] object-contain scale-130 box box2 box3 -z-10 hidden xl:block"
+              alt="Background Decoration"
+            />
+
+            <div
+              class="w-[1600px] h-[376px] bg-[#34a85339] animate-blur absolute left-[-20%] top-[12%] -rotate-5 blur-[100px] rounded-[100%]"
+            ></div>
+
+            <div class="relative z-10 w-full h-full">
+              <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40px] h-[40px] bg-white rounded-full animate-blinkAnmations"
+              ></div>
+              <iframe
+                class="w-full h-full rounded-xl sm:rounded-2xl border-4 md:border-8 border-[#34A853] shadow-xl"
+                src="https://www.youtube.com/embed/TD_N2VR3P1s"
+                title="Promotional Video"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-1 items-center md:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12 px-4"
+          >
+            <div class="text-center md:text-left">
+              <h3
+                class="text-base sm:text-lg md:text-xl font-semibold mb-2 capitalize text-[#1E1E1F]"
+              >
+                এখানে কিছু টেক্সট থাকবে
+              </h3>
+              <p
+                class="text-xs sm:text-sm md:text-base text-[#38435C] leading-relaxed"
+              >
+                লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক
+              </p>
+            </div>
+            <div class="text-center md:text-left">
+              <h3
+                class="text-base sm:text-lg md:text-xl font-semibold mb-2 capitalize text-[#1E1E1F]"
+              >
+                এখানে কিছু টেক্সট থাকবে
+              </h3>
+              <p
+                class="text-xs sm:text-sm md:text-base text-[#38435C] leading-relaxed"
+              >
+                লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক
+              </p>
+            </div>
+            <div class="text-center md:text-left">
+              <h3
+                class="text-base sm:text-lg md:text-xl font-semibold mb-2 capitalize text-[#1E1E1F]"
+              >
+                এখানে কিছু টেক্সট থাকবে
+              </h3>
+              <p
+                class="text-xs sm:text-sm md:text-base text-[#38435C] leading-relaxed"
+              >
+                লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- promotional video{Mahir} -->
+
+    <!-- ==========================================================================
+                  free sections start
+   ============================================================================ -->
+
+    <section class="py-[64px] bg-[#E9F0F8] mb-[140px]">
+      <div class="max-w-[1140px] mx-auto">
+        <div>
+          <h2
+            class="text-[#1E1E1F] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%] font-extrabold text-center px-4"
+          >
+            বিনামূল্যে আপনার
+            <span class="text-[#4285FA]">সেশন নির্বাচন করুন</span>
+          </h2>
+
+          <p
+            class="w-full lg:w-[809px] text-sm sm:text-base md:text-lg leading-[150%] text-center mx-auto text-[#38435C] mt-4 mb-6 sm:mb-8 px-4"
+          >
+            লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট
+            ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট
+            ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
+            ডিয়াম ডিয়াম টেলুস আলট্রিসিস.
+          </p>
+        </div>
+        <div
+          class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-5"
+        >
+          <div class="p-[14px] bg-white rounded-[20px]">
+            <div>
+              <figure>
+                <img
+                  src="./src/images/freeone.png"
+                  alt="freeone"
+                  class="w-full rounded-[16px] object-cover"
+                />
+              </figure>
+            </div>
+            <div class="pt-4 space-y-7">
+              <p class="font-normal text-base/[150%] text-[#1E1E1F] truncate">
+                ক্যারিয়ার গাইডেন্সের জন্য মেন্টরের সাথে কথা বলুন
+              </p>
+              <div class="flex justify-between items-center">
+                <figure>
+                  <img src="./src/images/citlogo.png" alt="cit-logo" />
+                </figure>
+                <button
+                  class="py-2 px-3 bg-[#4285FA] text-white rounded-[10px] flex items-center gap-x-2 font-semibold text-[13px] cursor-pointer"
+                >
+                  ফ্রিতে বুক করুন <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-[14px] bg-white rounded-[20px]">
+            <div>
+              <figure>
+                <img
+                  src="./src/images/freetwo.png"
+                  alt="freeone"
+                  class="w-full rounded-[16px] object-cover"
+                />
+              </figure>
+            </div>
+            <div class="pt-4 space-y-7">
+              <p class="font-normal text-base/[150%] text-[#1E1E1F]">
+                বিনামূল্যে ৩ দিনের ডেমো ক্লাস বুক করুন
+              </p>
+              <div class="flex justify-between items-center">
+                <figure>
+                  <img src="./src/images/citlogo.png" alt="cit-logo" />
+                </figure>
+                <button
+                  class="py-2 px-3 bg-[#4285FA] text-white rounded-[10px] flex items-center gap-x-2 cursor-pointer font-semibold text-[13px]"
+                >
+                  ফ্রিতে বুক করুন <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-[14px] bg-white rounded-[20px]">
+            <div>
+              <figure>
+                <img
+                  src="./src/images/freethree.png"
+                  alt="freeone"
+                  class="w-full rounded-[16px] object-cover"
+                />
+              </figure>
+            </div>
+            <div class="pt-4 space-y-7">
+              <p class="font-normal text-base/[150%] text-[#1E1E1F] truncate">
+                অ্যাডমিশন টিমের সাথে সরাসরি কথা বলুন
+              </p>
+              <div class="flex justify-between items-center">
+                <figure>
+                  <img src="./src/images/citlogo.png" alt="cit-logo" />
+                </figure>
+                <button
+                  class="py-2 px-3 bg-[#4285FA] text-white rounded-[10px] cursor-pointer flex items-center gap-x-2 font-semibold text-[13px]"
+                >
+                  ফ্রিতে বুক করুন <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-[14px] bg-white rounded-[20px]">
+            <div>
+              <figure>
+                <img
+                  src="./src/images/freefour.png"
+                  alt="freeone"
+                  class="w-full rounded-[16px] object-cover"
+                />
+              </figure>
+            </div>
+            <div class="pt-4 space-y-7">
+              <p class="font-normal text-base/[150%] text-[#1E1E1F]">
+                ছন্দের সেমিনারে অংশ নিন
+              </p>
+              <div class="flex justify-between items-center">
+                <figure>
+                  <img src="./src/images/citlogo.png" alt="cit-logo" />
+                </figure>
+                <button
+                  class="py-2 px-3 bg-[#4285FA] text-white rounded-[10px] cursor-pointer flex items-center gap-x-2 font-semibold text-[13px]"
+                >
+                  ফ্রিতে বুক করুন <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+                  free sections end
+   ============================================================================ -->
+
+    <!-- =======================================================================================
+                            Course Module part start {Jhulon kumar}
+        ====================================================================================== -->
+    <section
+      class="px-3 pt-[50px] md:pt-[120px] lg:pt-[150px] pb-[70px] lg:pb-[140px] relative overflow-hidden"
+    >
+      <div
+        class="w-[140%] h-[200px] sm:w-[140%] sm:h-[360px] md:w-[140%] md:h-[400px] lg:w-[140%] lg:h-[744px] bg-gradient-to-t from-[#FFFFFF] from-70% to-[#fcba05cc] opacity-30 to-100% rounded-[50%] absolute top-0 left-[50%] translate-x-[-50%] z-[-1]"
+      ></div>
+      <div class="max-w-[1140px] mx-auto">
+        <div class="z-20">
+          <h2
+            class="text-[#1E1E1F] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[150%] font-extrabold text-center"
+          >
+            এখানে কোর্স <span class="text-[#4285FA]">মডিউল থাকবে</span>
+          </h2>
+          <p
+            class="lg:w-[809px] text-center mx-auto font-normal text-lg/[120%] text-[#38435C] mt-4 mb-8"
+          >
+            লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট
+            ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট
+            ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
+            ডিয়াম ডিয়াম টেলুস আলট্রিসিস
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-6">
+          <div class="space-y-6">
+            <div>
+              <div
+                id="accordion-collapse-1"
+                data-accordion="collapse"
+                class="rounded-base border-2 border-[#4285FA] overflow-hidden"
+              >
+                <h2 id="accordion-collapse-heading-1 !border">
+                  <button
+                    type="button"
+                    class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
+                    data-accordion-target="#accordion-collapse-body-1"
+                    aria-controls="accordion-collapse-body-1  "
+                    aria-expanded="true"
+                    style="background-color: transparent"
+                  >
+                    <span
+                      class="text-[#1E1E1F] text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3"
+                    >
+                      <div>
+                        <img src="src/images/Container.png" alt="Container" />
+                      </div>
+                      মডিউলের টাইটেল এখানে থাকবে
+                    </span>
+                    <svg
+                      data-accordion-icon
+                      class="w-5 h-5 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m5 15 7-7 7 7"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-1"
+                  class="hidden border-b-default"
+                  aria-labelledby="accordion-collapse-heading-1"
+                >
+                  <div class="p-4 lg:pt-0 md:p-5">
+                    <p
+                      class="mb-2 text-[#38435C] text-[14px]/[150%] font-normal"
+                    >
+                      লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                      টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
+                      ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস
+                      আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
+                      আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি
+                      এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট।
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                id="accordion-collapse-2"
+                data-accordion="collapse"
+                class="rounded-base border-2 border-[#F88513] overflow-hidden"
+              >
+                <h2 id="accordion-collapse-heading-2 !border">
+                  <button
+                    type="button"
+                    class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
+                    data-accordion-target="#accordion-collapse-body-2"
+                    aria-controls="accordion-collapse-body-2"
+                    style="background-color: transparent"
+                  >
+                    <span
+                      class="text-[#1E1E1F] text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3"
+                    >
+                      <div><img src="src/images/Container2.png" alt="" /></div>
+                      মডিউলের টাইটেল এখানে থাকবে
+                    </span>
+                    <svg
+                      data-accordion-icon
+                      class="w-5 h-5 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m5 15 7-7 7 7"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-2"
+                  class="hidden border-b-default"
+                  aria-labelledby="accordion-collapse-heading-2 "
+                >
+                  <div class="p-4 lg:pt-0 md:p-5">
+                    <p
+                      class="mb-2 text-[#38435C] text-[14px]/[150%] font-normal"
+                    >
+                      লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                      টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
+                      ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস
+                      আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
+                      আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি
+                      এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট।
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                id="accordion-collapse-3"
+                data-accordion="collapse"
+                class="rounded-base border-2 border-[#4285FA] overflow-hidden"
+              >
+                <h2 id="accordion-collapse-heading-3 !border">
+                  <button
+                    type="button"
+                    class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
+                    style="background-color: transparent"
+                    data-accordion-target="#accordion-collapse-body-3"
+                    aria-controls="accordion-collapse-body-3"
+                  >
+                    <span
+                      class="text-[#1E1E1F] text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3"
+                    >
+                      <div>
+                        <img src="src/images/Container.png" alt="Container" />
+                      </div>
+                      মডিউলের টাইটেল এখানে থাকবে
+                    </span>
+                    <svg
+                      data-accordion-icon
+                      class="w-5 h-5 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m5 15 7-7 7 7"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-3"
+                  class="hidden border-b-default"
+                  aria-labelledby="accordion-collapse-heading-3"
+                >
+                  <div class="p-4 lg:pt-0 md:p-5">
+                    <p
+                      class="mb-2 text-[#38435C] text-[14px]/[150%] font-normal"
+                    >
+                      লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                      টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
+                      ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস
+                      আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
+                      আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি
+                      এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট।
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                id="accordion-collapse-4"
+                data-accordion="collapse"
+                class="rounded-base border-2 border-[#F88513] overflow-hidden"
+              >
+                <h2 id="accordion-collapse-heading-4 !border">
+                  <button
+                    type="button"
+                    style="background-color: transparent"
+                    class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
+                    data-accordion-target="#accordion-collapse-body-4"
+                    aria-controls="accordion-collapse-body-4"
+                  >
+                    <span
+                      class="text-[#1E1E1F] text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3"
+                    >
+                      <div><img src="src/images/Container2.png" alt="" /></div>
+                      মডিউলের টাইটেল এখানে থাকবে
+                    </span>
+                    <svg
+                      data-accordion-icon
+                      class="w-5 h-5 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m5 15 7-7 7 7"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-4"
+                  class="hidden border-b-default"
+                  aria-labelledby="accordion-collapse-heading-4"
+                >
+                  <div class="p-4 lg:pt-0 md:p-5">
+                    <p
+                      class="mb-2 text-[#38435C] text-[14px]/[150%] font-normal"
+                    >
+                      লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                      টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
+                      ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস
+                      আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
+                      আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি
+                      এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট।
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6 mt-6 lg:mt-0">
+            <div>
+              <div
+                id="accordion-collapse-5"
+                data-accordion="collapse"
+                class="rounded-base border-2 border-[#DF3636] overflow-hidden"
+              >
+                <h2 id="accordion-collapse-heading-5 !border">
+                  <button
+                    type="button"
+                    style="background-color: transparent"
+                    class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
+                    data-accordion-target="#accordion-collapse-body-5"
+                    aria-controls="accordion-collapse-body-5"
+                    aria-expanded="true"
+                  >
+                    <span
+                      class="text-[#1E1E1F] text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3"
+                    >
+                      <div><img src="src/images/Container3.png" alt="" /></div>
+                      মডিউলের টাইটেল এখানে থাকবে
+                    </span>
+                    <svg
+                      data-accordion-icon
+                      class="w-5 h-5 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m5 15 7-7 7 7"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-5"
+                  class="hidden border-b-default"
+                  aria-labelledby="accordion-collapse-heading-5"
+                >
+                  <div class="p-4 lg:pt-0 md:p-5">
+                    <p
+                      class="mb-2 text-[#38435C] text-[14px]/[150%] font-normal"
+                    >
+                      লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                      টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
+                      ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস
+                      আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
+                      আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি
+                      এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট।
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div
+                id="accordion-collapse-6"
+                data-accordion="collapse"
+                class="rounded-base border-2 border-[#34A853] overflow-hidden"
+              >
+                <h2 id="accordion-collapse-heading-6 !border">
+                  <button
+                    type="button"
+                    style="background-color: transparent"
+                    class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
+                    data-accordion-target="#accordion-collapse-body-6"
+                    aria-controls="accordion-collapse-body-6"
+                  >
+                    <span
+                      class="text-[#1E1E1F] text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3"
+                    >
+                      <div><img src="src/images/Container4.png" alt="" /></div>
+                      মডিউলের টাইটেল এখানে থাকবে
+                    </span>
+                    <svg
+                      data-accordion-icon
+                      class="w-5 h-5 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m5 15 7-7 7 7"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-6"
+                  class="hidden border-b-default"
+                  aria-labelledby="accordion-collapse-heading-6"
+                >
+                  <div class="p-4 lg:pt-0 md:p-5">
+                    <p
+                      class="mb-2 text-[#38435C] text-[14px]/[150%] font-normal"
+                    >
+                      লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                      টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
+                      ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস
+                      আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
+                      আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি
+                      এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট।
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                id="accordion-collapse-7"
+                data-accordion="collapse"
+                class="rounded-base border-2 border-[#DF3636] overflow-hidden"
+              >
+                <h2 id="accordion-collapse-heading-7 !border">
+                  <button
+                    type="button"
+                    style="background-color: transparent"
+                    class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
+                    data-accordion-target="#accordion-collapse-body-7"
+                    aria-controls="accordion-collapse-body-7"
+                  >
+                    <span
+                      class="text-[#1E1E1F] text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3"
+                    >
+                      <div><img src="src/images/Container3.png" alt="" /></div>
+                      মডিউলের টাইটেল এখানে থাকবে
+                    </span>
+                    <svg
+                      data-accordion-icon
+                      class="w-5 h-5 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m5 15 7-7 7 7"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-7"
+                  class="hidden border-b-default"
+                  aria-labelledby="accordion-collapse-heading-7"
+                >
+                  <div class="p-4 lg:pt-0 md:p-5">
+                    <p
+                      class="mb-2 text-[#38435C] text-[14px]/[150%] font-normal"
+                    >
+                      লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                      টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
+                      ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস
+                      আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
+                      আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি
+                      এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট।
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div
+                id="accordion-collapse-8"
+                data-accordion="collapse"
+                class="rounded-base border-2 border-[#34A853] overflow-hidden"
+              >
+                <h2 id="accordion-collapse-heading-8 !border">
+                  <button
+                    type="button"
+                    style="background-color: transparent"
+                    class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
+                    data-accordion-target="#accordion-collapse-body-8"
+                    aria-controls="accordion-collapse-body-8"
+                  >
+                    <span
+                      class="text-[#1E1E1F] text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3"
+                    >
+                      <div><img src="src/images/Container4.png" alt="" /></div>
+                      মডিউলের টাইটেল এখানে থাকবে
+                    </span>
+                    <svg
+                      data-accordion-icon
+                      class="w-5 h-5 rotate-180 shrink-0"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m5 15 7-7 7 7"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-8"
+                  class="hidden border-b-default"
+                  aria-labelledby="accordion-collapse-heading-8"
+                >
+                  <div class="p-4 lg:pt-0 md:p-5">
+                    <p
+                      class="mb-2 text-[#38435C] text-[14px]/[150%] font-normal"
+                    >
+                      লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                      টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
+                      ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস
+                      আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
+                      আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি
+                      এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট।
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="hidden lg:flex items-center gap-x-50">
-          <ul class="flex gap-x-10 font-semibold text-base text-[#1E1E1F]">
-            <li>
-              <a href="#" class="hover:text-[#4285FA] transition-all relative duration-300">হোম
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-[#4285FA] transition-all">আমাদের সম্পর্কে</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-[#4285FA] transition-all">ব্লগ</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-[#4285FA] transition-all">যোগাযোগ</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-[#4285FA] transition-all">কোর্স</a>
-            </li>
-          </ul>
-          <button class="px-6 h-11 bg-[#4285FA] text-white font-semibold  text-base rounded-[10px]">
-            <a href="#">এনরোল করুন <i class="fa-solid fa-arrow-right-long ml-1"></i></a>
+        <div class="flex justify-center">
+          <button
+            class="mt-8 border border-[#4285FA] bg-[#4285FA] transition duration-700 ease-in-out hover:bg-white hover:text-[#4285FA] text-white px-4 py-3 rounded-md"
+          >
+            আরও দেখুন <i class="fa-solid fa-chevron-down ml-2"></i>
           </button>
         </div>
       </div>
-    </div>
-  </nav>
-  <!-- Header Part End  {maozzem} -->
+    </section>
+    <!-- =======================================================================================
+                          Course Module part end {Jhulon kumar}
+     ====================================================================================== -->
 
-  <!-- Banner part (Saimum) -->
-  <section class="bg-cover bg-no-repeat bg-center" style="background-image: url(./src/images/banner-bg.png)">
-    <div class="max-w-[1140px] mx-auto px-5 py-16 lg:py-[48px]">
-      <!-- Responsive Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <!-- Left Side -->
-        <div class="text-center lg:text-left">
-          <p class="px-3 py-2 inline-block rounded-2xl shadow-lg lg:shadow-none bg-white text-sm">
-            <i class="fa-solid fa-fire text-yellow-400"></i>
-            কিছু ওভারলাইন মানানসই টেক্সট এখানে থাকবে
+    <!-- =================================================== 
+                        Bannar part ( jobayer)
+     ======================================================== -->
+
+    <section class="pb:[40px] lg:pb-[100px]">
+      <div
+        class="relative bg-cover bg-center w-full min-h-[200px] sm:min-h-[300px] lg:min-h-[450px] flex justify-center items-center px-4"
+        style="background-image: url(./src/images/eye1.png)"
+      >
+        <!-- Overlay -->
+
+        <!-- Content -->
+        <h2
+          class="relative text-white font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center leading-tight"
+        >
+          চোখে পড়ার মতো ডিজিটাল মার্কেটিং ব্যানার
+        </h2>
+      </div>
+    </section>
+
+    <!-- =================================================
+                  Banner part finished (jobayer)
+   =========================================================== -->
+
+    <!-- =======================================================================================
+                          journey roadmape part start {Jhulon kumar}
+     ====================================================================================== -->
+    <section class="p-10 mb-[50px] lg:mb-[140px] relative">
+      <div
+        class="bg-[#34A853] w-[50%] h-[10%] absolute left-1/2 top-[65%] blur-[150px] -translate-1/2 z-10"
+      ></div>
+      <div
+        class="bg-[#d9ebfa] w-[100%] h-[50%] rounded-full absolute left-1/2 top-[65%] blur-[150px] z-0 -translate-1/2"
+      ></div>
+      <div class="max-w-[1140px] mx-auto">
+        <div class="z-20">
+          <h2
+            class="text-[#1E1E1F] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[150%] font-extrabold text-center"
+          >
+            একটি এক্সাইটিং
+            <span class="text-[#4285FA] ml-2">লার্নিং জার্নি রোডম্যাপ</span>
+          </h2>
+          <p
+            class="lg:max-w-[809px] text-center mx-auto font-normal text-lg/[120%] text-[#38435C] mt-4 mb-8"
+          >
+            লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট
+            ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট
+            ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
+            ডিয়াম ডিয়াম টেলুস আলট্রিসিস
           </p>
-
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold py-6 leading-tight">
-            ডিজিটাল মার্কেটিং
-            <span class="text-blue-500">-এর জন্য টাইটেল</span>
-          </h1>
-
-          <!-- Small CTA Tags -->
-          <div class="flex flex-wrap justify-center lg:justify-start gap-3 mb-6">
-            <a href="#"
-              class="bg-green-100 text-green-700 border border-green-300 px-4 py-2 rounded-[10px] font-semibold hover:bg-green-200 transition text-sm">
-              বাটন লেবেল <i class="fa-solid fa-display"></i>
-            </a>
-
-            <a href="#"
-              class="bg-yellow-100 text-yellow-600 border border-yellow-300 px-4 py-2 rounded-[10px] font-semibold hover:bg-yellow-200 transition duration-200 text-sm">
-              বাটন লেবেল <i class="fa-solid fa-user-group"></i>
-            </a>
-
-            <a href="#"
-              class="bg-red-100 text-red-500 border border-red-300 px-4 py-2 rounded-[10px] font-semibold hover:bg-red-200 transition text-sm">
-              বাটন লেবেল <i class="fa-solid fa-crown"></i>
-            </a>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div
+            class="p-[2px] rounded-lg overflow-hidden relative z-20 shadow-xl"
+          >
+            <div
+              class="absolute w-[150px] h-[200px] blur-xl bg-[#5B8FFF] animate-rounded3 z-[-1] top-[-50%] translate-y-[15%] left-0"
+            ></div>
+            <div class="p-6 bg-white rounded-lg">
+              <div class="flex items-center">
+                <span
+                  class="text-[#4285FA] bg-[#F1F5FF] py-1 px-4 text-[32px]/[150%] font-semibold rounded"
+                  >1</span
+                >
+                <div
+                  class="bg-linear-to-l from-[#FFFFFF] to-[#4285FA] h-2 w-full"
+                ></div>
+              </div>
+              <div class="mt-4">
+                <p class="text-xl/[150%] font-semibold text-[#38435C]">
+                  লার্নিং জার্নির শিরোনাম এখানে থাকবে
+                </p>
+                <p class="text-[14px]/[150%] font-normal text-[#6F7B88] mt-2">
+                  লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                  টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                  ইন্টারডুম সিট ক্রাস।
+                </p>
+              </div>
+            </div>
           </div>
-
-          <p class="text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">
-            লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
-            ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
-            আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট।
-            ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস।
-          </p>
-
-          <!-- Main Buttons -->
-          <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-            <button class="px-8 py-3 rounded-xl bg-blue-500 hover:bg-blue-700 text-white tra">
-              আপ্লাই করুন ৪০% ডিসকাউন্ট <i class="fa-solid fa-crown"></i>
-            </button>
-
-            <button class="px-6 py-3 rounded-xl bg-black hover:bg-[#1a1a1a] text-white tra">
-              কারিকুলাম ডাউনলোড করুন <i class="fa-solid fa-arrow-down"></i>
-            </button>
+          <div
+            class="p-[2px] rounded-lg overflow-hidden relative z-20 shadow-xl"
+          >
+            <div
+              class="absolute w-[150px] h-[200px] blur-xl bg-[#34A853] z-[-1] top-[50%] left-0"
+            ></div>
+            <div class="p-6 bg-white rounded-lg">
+              <div class="flex items-center">
+                <span
+                  class="text-[#34A853] bg-[#EFF8F2] py-1 px-4 text-[32px]/[150%] font-semibold rounded"
+                  >2</span
+                >
+                <div
+                  class="bg-linear-to-l from-[#FFFFFF] to-[#34A853] h-2 w-full"
+                ></div>
+              </div>
+              <div class="mt-4">
+                <p class="text-xl/[150%] font-semibold text-[#38435C]">
+                  লার্নিং জার্নির শিরোনাম এখানে থাকবে
+                </p>
+                <p class="text-[14px]/[150%] font-normal text-[#6F7B88] mt-2">
+                  লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                  টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                  ইন্টারডুম সিট ক্রাস।
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-[2px] rounded-lg overflow-hidden relative z-20 shadow-xl"
+          >
+            <div
+              class="absolute w-[200px] h-[200px] blur-xl animate-rounded4 bg-[#F88513] z-[-1] top-[-50%] translate-y-[15%] right-0"
+            ></div>
+            <div class="p-6 bg-white rounded-lg">
+              <div class="flex items-center">
+                <span
+                  class="text-[#F88513] bg-[#FDF5E6] py-1 px-4 text-[32px]/[150%] font-semibold rounded"
+                  >3</span
+                >
+                <div
+                  class="bg-linear-to-l from-[#FFFFFF] to-[#F88513] h-2 w-full"
+                ></div>
+              </div>
+              <div class="mt-4">
+                <p class="text-xl/[150%] font-semibold text-[#38435C]">
+                  লার্নিং জার্নির শিরোনাম এখানে থাকবে
+                </p>
+                <p class="text-[14px]/[150%] font-normal text-[#6F7B88] mt-2">
+                  লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                  টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                  ইন্টারডুম সিট ক্রাস।
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- Right Side -->
-        <div class="flex w-full justify-center lg:justify-end">
-          <div class="p-[2px] w-[461px] relative rounded-lg overflow-hidden z-20">
+        <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div
+            class="p-[2px] rounded-lg overflow-hidden relative z-20 shadow-xl"
+          >
             <div
-              class="bg-[#F88513] animate-rounded1 right-[-50px] -top-1/2 translate-y-1/2 blur-xl absolute w-[200px] h-[300px] lg:w-[300px] lg:h-[400px] z-[-1]">
+              class="absolute w-[250px] h-[250px] animate-rounded4 blur-xl bg-[#DF3636] z-[-1] bottom-[-50%] translate-y-[%] left-0"
+            ></div>
+            <div class="p-6 bg-white rounded-lg">
+              <div class="flex items-center">
+                <span
+                  class="text-[#DF3636] bg-[#FFE9E9] py-1 px-4 text-[32px]/[150%] font-semibold rounded"
+                  >4</span
+                >
+                <div
+                  class="bg-linear-to-l from-[#FFFFFF] to-[#DF3636] h-2 w-full"
+                ></div>
+              </div>
+              <div class="mt-4">
+                <p class="text-xl/[150%] font-semibold text-[#38435C]">
+                  লার্নিং জার্নির শিরোনাম এখানে থাকবে
+                </p>
+                <p class="text-[14px]/[150%] font-normal text-[#6F7B88] mt-2">
+                  লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                  টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                  ইন্টারডুম সিট ক্রাস।
+                </p>
+              </div>
             </div>
+          </div>
+          <div
+            class="p-[2px] rounded-lg overflow-hidden relative z-20 shadow-xl"
+          >
             <div
-              class="bg-[#34A853] animate-rounded2 left-0 -bottom-1/2 -translate-1/2 blur-xl absolute h-[300px] w-[300px] lg:w-[380px] lg:h-[380px] z-[-1]">
+              class="absolute w-[250px] h-[250px] blur-xl bg-[#4285FA] z-[-1] animate-rounded5 bottom-[-50%] translate-y-[%] right-0"
+            ></div>
+            <div class="p-6 bg-white rounded-lg">
+              <div class="flex items-center">
+                <span
+                  class="text-[#4285FA] bg-[#F1F5FF] py-1 px-4 text-[32px]/[150%] font-semibold rounded"
+                  >5</span
+                >
+                <div
+                  class="bg-linear-to-l from-[#FFFFFF] to-[#4285FA] h-2 w-full"
+                ></div>
+              </div>
+              <div class="mt-4">
+                <p class="text-xl/[150%] font-semibold text-[#38435C]">
+                  লার্নিং জার্নির শিরোনাম এখানে থাকবে
+                </p>
+                <p class="text-[14px]/[150%] font-normal text-[#6F7B88] mt-2">
+                  লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                  টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                  ইন্টারডুম সিট ক্রাস।
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =======================================================================================
+                          journey roadmap part end {Jhulon kumar}
+     ====================================================================================== -->
 
-            <div class="bg-white w-full rounded-lg shadow-xl p-6 sm:p-8 border border-gray-200">
-              <!-- Input Box Here -->
+    <!-- ====================================================
+             Our student stories (jobayer)
+    ========================================================-->
 
-              <h2 class="text-xl sm:text-2xl font-bold text-center mb-2">
-                আপনার আসন এখনই নিশ্চিত করুন
-              </h2>
+    <section class="px-4 pt-[40px] lg:pt-0">
+      <div class="max-w-[1140px] mx-auto">
+        <!-- Heading Area -->
+        <div class="text-center mb-12 ]">
+          <h2
+            class="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[150%] text-black"
+          >
+            আমাদের শিক্ষার্থীরাই
+            <span class="!text-[#4285FA]"> গল্প শেয়ার করেছেন </span>
+          </h2>
 
-              <p class="text-gray-500 text-center mb-6 text-sm">
-                আপনার পেশাদার ক্যারিয়ার বিনামূল্যে শুরু করুন
-              </p>
+          <p
+            class="text-[#38435C] max-w-[950px] mx-auto text-base sm:text-lg leading-relaxed mt-6"
+          >
+            লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট
+            ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট
+            ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
+            ডিয়াম ডিয়াম টেলুস আলট্রিসিস
+          </p>
+        </div>
+      </div>
 
-              <!-- Form -->
-              <div class="space-y-4">
-                <!-- Full Name -->
-                <div>
-                  <label class="text-sm font-medium text-gray-600">আপনার পুরো নাম</label>
-                  <div class="relative mt-1">
-                    <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
-                      <i class="fa-regular fa-user"></i>
-                    </span>
-                    <input type="text" placeholder="এখানে লিখুন "
-                      class="w-full pl-10 pr-4 py-3 rounded-lg bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition" />
-                  </div>
-                </div>
-
-                <!-- Phone -->
-                <div>
-                  <label class="text-sm font-medium text-gray-600">ফোন নম্বর</label>
-                  <div class="relative mt-1">
-                    <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
-                      <i class="fa-solid fa-phone"></i>
-                    </span>
-                    <input type="text" placeholder="এখানে লিখুন"
-                      class="w-full pl-10 pr-4 py-3 rounded-lg bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition" />
-                  </div>
-                </div>
-                <!-- Email -->
-                <div>
-                  <label class="text-sm font-medium text-gray-600">ইমেইল ঠিকানা (ঐচ্ছিক)</label>
-                  <div class="relative mt-1">
-                    <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
-                      <i class="fa-regular fa-envelope"></i>
-                    </span>
-                    <input type="email" placeholder="এখানে লিখুন"
-                      class="w-full pl-10 pr-4 py-3 rounded-lg bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition" />
-                  </div>
-                </div>
-
-
-
-                <!-- Career Goals -->
-                <div>
-                  <label class="text-sm font-medium text-gray-600">আপনার সেশন বেছে নিন</label>
-                  <div class="relative mt-1">
-                    <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
-                      <i class="fa-solid fa-briefcase"></i>
-                    </span>
-                    <input type="text" placeholder="সেশন নির্বাচন করুন"
-                      class="w-full pl-10 pr-4 py-3 rounded-lg bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition" />
+      <!-- Cards -->
+      <div class="bg-white overflow-hidden">
+        <div class="">
+          <div class="slider-container overflow-hidden py-5">
+            <div
+              class="track flex gap-x-3 md:gap-x-5 transition-transform duration-700 ease-in-out"
+            >
+              <div
+                class="item flex flex-col bg-[#FFFBEB] p-5 rounded-3xl shadow-sm border border-orange-50 shrink-0"
+              >
+                <div class="flex items-center gap-6">
+                  <img
+                    src="./src/images/jhulon1.png"
+                    class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
+                    alt="User"
+                  />
+                  <div class="flex-1">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-yellow-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] italic mb-3 line-clamp-3"
+                    >
+                      "এই কোর্সটি আমার জন্য খুবই সহায়ক ছিল এবং এখান থেকে আমি
+                      অনেক নতুন কিছু শিখতে পেরেছি।"
+                    </p>
+                    <h4 class="font-bold text-gray-900 text-sm">
+                      ঝুলন কুমার রায়
+                    </h4>
+                    <p class="text-gray-500 text-[11px]">ব্যাচ - FDR 2415</p>
                   </div>
                 </div>
               </div>
 
-              <!-- Submit Button -->
+              <div
+                class="item flex flex-col bg-[#FFF7ED] p-5 rounded-3xl shadow-sm border border-orange-50 shrink-0"
+              >
+                <div class="flex items-center gap-6">
+                  <img
+                    src="./src/images/saimum.png"
+                    class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
+                    alt="User"
+                  />
+                  <div class="flex-1">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-yellow-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] italic mb-3 line-clamp-3"
+                    >
+                      "এই প্রশিক্ষণের মাধ্যমে আমি অনেক নতুন দক্ষতা অর্জন করেছি
+                      এবং বাস্তব কাজে তা ব্যবহার করতে পারছি।"
+                    </p>
+                    <h4 class="font-bold text-gray-900 text-sm">
+                      আবু সাঈদ সাইমুম
+                    </h4>
+                    <p class="text-gray-500 text-[11px]">ব্যাচ - FDR 2415</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="item flex flex-col bg-[#FFF1F2] p-5 rounded-3xl shadow-sm border border-rose-50 shrink-0"
+              >
+                <div class="flex items-center gap-6">
+                  <img
+                    src="./src/images/moazeem.jpg"
+                    class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
+                    alt="User"
+                  />
+                  <div class="flex-1">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-yellow-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] italic mb-3 line-clamp-3"
+                    >
+                      "এই কোর্সটি আমাকে ওয়েব ডেভেলপমেন্ট সম্পর্কে পরিষ্কার
+                      ধারণা দিয়েছে।"
+                    </p>
+                    <h4 class="font-bold text-gray-900 text-sm">
+                      মোয়াজ্জেম হোসেন
+                    </h4>
+                    <p class="text-gray-500 text-[11px]">
+                      ইন্টার্ন - EBT-WEB-1
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="item flex flex-col bg-[#F0F9FF] p-5 rounded-3xl shadow-sm border border-sky-50 shrink-0"
+              >
+                <div class="flex items-center gap-6">
+                  <img
+                    src="./src/images/jeba.jpg"
+                    class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
+                    alt="User"
+                  />
+                  <div class="flex-1">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-yellow-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] italic mb-3 line-clamp-3"
+                    >
+                      "এখানকার শেখানোর পদ্ধতি খুব সহজ এবং পরিষ্কার ছিল।"
+                    </p>
+                    <h4 class="font-bold text-gray-900 text-sm">জেবা খানম</h4>
+                    <p class="text-gray-500 text-[11px]">
+                      ইন্টার্ন - EBT-WEB-1
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="item flex flex-col bg-[#F5F3FF] p-5 rounded-3xl shadow-sm border border-violet-50 shrink-0"
+              >
+                <div class="flex items-center gap-6">
+                  <img
+                    src="./src/images/shakib.jpg"
+                    class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
+                    alt="User"
+                  />
+                  <div class="flex-1">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-yellow-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] italic mb-3 line-clamp-3"
+                    >
+                      "এই কোর্স করার পর আমি বাস্তব প্রজেক্টে কাজ করার
+                      আত্মবিশ্বাস পেয়েছি।"
+                    </p>
+                    <h4 class="font-bold text-gray-900 text-sm">সাকিব সালিম</h4>
+                    <p class="text-gray-500 text-[11px]">
+                      ইন্টার্ন - EBT-WEB-1
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="item flex flex-col bg-[#FFFBEB] p-5 rounded-3xl shadow-sm border border-orange-50 shrink-0"
+              >
+                <div class="flex items-center gap-6">
+                  <img
+                    src="./src/images/mahir.jpg"
+                    class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
+                    alt="User"
+                  />
+                  <div class="flex-1">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-yellow-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] italic mb-3 line-clamp-3"
+                    >
+                      "এই প্রশিক্ষণ আমার ক্যারিয়ারের জন্য খুবই সহায়ক হয়েছে।"
+                    </p>
+                    <h4 class="font-bold text-gray-900 text-sm">মাহির হাসিন</h4>
+                    <p class="text-gray-500 text-[11px]">
+                      ইন্টার্ন - EBT-WEB-1
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="item flex flex-col bg-[#F0FDF4] p-5 rounded-3xl shadow-sm border border-green-50 shrink-0"
+              >
+                <div class="flex items-center gap-6">
+                  <img
+                    src="./src/images/jobayer.jpg"
+                    class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
+                    alt="User"
+                  />
+                  <div class="flex-1">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-yellow-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] italic mb-3 line-clamp-3"
+                    >
+                      "এখানে শেখার পরিবেশ খুব ভালো এবং মেন্টররা সব সময় সহায়তা
+                      করেছেন।"
+                    </p>
+                    <h4 class="font-bold text-gray-900 text-sm">
+                      মোঃ জোবায়ের হোসেন
+                    </h4>
+                    <p class="text-gray-500 text-[11px]">
+                      ইন্টার্ন - EBT-WEB-1
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="item flex flex-col bg-[#F0FDF4] p-5 rounded-3xl shadow-sm border border-green-50 shrink-0"
+              >
+                <div class="flex items-center gap-6">
+                  <img
+                    src="./src/images/najnin.jpg"
+                    class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
+                    alt="User"
+                  />
+                  <div class="flex-1">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-yellow-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] italic mb-3 line-clamp-3"
+                    >
+                      "এই কোর্সটি আমার জন্য খুবই উপকারী ছিল এবং আমি অনেক নতুন
+                      দক্ষতা অর্জন করেছি।"
+                    </p>
+                    <h4 class="font-bold text-gray-900 text-sm">নাজনিন ইমু</h4>
+                    <p class="text-gray-500 text-[11px]">
+                      ইন্টার্ন - EBT-WEB-1
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-center gap-2 mt-5"
+            id="pagination-lines"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ 
+                Our student stories finished (jobayer)
+    ================================================================== -->
+
+    <!-- ready part start   {jeba} -->
+
+    <div class="py-[40px] relative z-50 mt-[50px] lg:mt-0 lg:py-[140px]">
+      <div
+        class="w-full absolute z-[-1] h-[400px] bg-[#fff6df75] animate-blur blur-[100px] left-[50%] top-[80%] -translate-1/2 rounded-[100%]"
+      ></div>
+
+      <div
+        class="max-w-[1140px] mx-auto py-8 md:py-[70px] px-[10px] md:px-[60px] bg-no-repeat bg-cover bg-center rounded-lg"
+        style="background-image: url(./src/images/ready-part-images.png)"
+      >
+        <div
+          class="grid z-20 grid-cols-1 lg:grid-cols-2 gap-10 items-center rounded-2xl w-full"
+        >
+          <!-- LEFT -->
+          <div class="flex flex-col items-center lg:items-start">
+            <h3
+              class="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1E1E1F] leading-[150%]"
+            >
+              আপনার ক্যারিয়ার
+            </h3>
+            <span
+              class="font-extrabold text-3xl md:text-[56px] text-[#4285FA] leading-tight"
+            >
+              শুরু করার জন্য প্রস্তুত
+            </span>
+
+            <p
+              class="mt-4 max-w-[520px] text-center lg:text-start text-[16px] md:text-lg text-[#38435C] leading-relaxed"
+            >
+              লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট
+              ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট
+              ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
+            </p>
+
+            <!-- Badge -->
+            <div class="mt-6 relative inline-block">
               <button
-                class="w-full mt-6 bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                আমার আসন বুক করুন <i class="fa-solid fa-arrow-right-long"></i>
+                class="px-10 py-3 cursor-pointer rounded-full border bg-white border-gray-200 shadow-sm text-black text-[16px] font-medium hover:shadow-md transition"
+              >
+                সীমিত আসন আছে
               </button>
 
-              <p class="text-center text-gray-400 text-xs mt-4">
+              <img
+                src="/src/images/r2.svg"
+                class="absolute left-3 top-1/2 -translate-y-1/2 w-4"
+                alt=""
+              />
+            </div>
+
+            <!-- Image -->
+            <div class="mt-6">
+              <img
+                class="w-full max-w-[420px]"
+                src="/src/images/ready.png"
+                alt="ready"
+              />
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div
+            class="relative rounded-2xl overflow-hidden shadow-xl w-full p-[2px] max-w-[420px] md:ml-auto mx-auto z-50"
+          >
+            <div
+              class="bg-[#F88513] animate-rounded1 right-[-50px] -top-1/2 translate-y-1/2 blur-xl absolute w-[200px] h-[300px] lg:w-[300px] lg:h-[400px] z-[-1]"
+            ></div>
+            <div
+              class="bg-[#34A853] animate-rounded2 left-0 -bottom-1/2 -translate-1/2 blur-xl absolute h-[300px] w-[300px] lg:w-[380px] lg:h-[380px] z-[-1]"
+            ></div>
+
+            <div class="lg:p-7 p-5 w-full bg-white rounded-2xl">
+              <!-- Corners -->
+
+              <h1
+                class="font-semibold text-xl md:text-3xl text-center text-[#1E1E1F]"
+              >
+                আপনার আসন এখনই নিশ্চিত করুন
+              </h1>
+
+              <p class="text-center text-sm md:text-base text-[#38435C] mt-2">
+                আপনার পেশাদার ক্যারিয়ার বিনামূল্যে শুরু করুন
+              </p>
+
+              <!-- Inputs -->
+              <div class="space-y-4 mt-6">
+                <div>
+                  <label class="text-sm">আপনার পুরো নাম</label>
+                  <div class="relative mt-1">
+                    <i
+                      class="fa-regular fa-user absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                    ></i>
+                    <input
+                      type="text"
+                      placeholder="এখানে লিখুন"
+                      class="w-full py-3 pl-10 pr-4 rounded-lg bg-[#F4F8FC] border border-[#A9B0B8] focus:border-[#4285FA] outline-none text-sm"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="text-sm">ইমেইল ঠিকানা</label>
+                  <div class="relative mt-1">
+                    <i
+                      class="fa-regular fa-envelope absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                    ></i>
+                    <input
+                      type="email"
+                      placeholder="এখানে লিখুন"
+                      class="w-full py-3 pl-10 pr-4 rounded-lg bg-[#F4F8FC] border border-[#A9B0B8] focus:border-[#4285FA] outline-none text-sm"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="text-sm">ফোন নম্বর</label>
+                  <div class="relative mt-1">
+                    <i
+                      class="fa-solid fa-phone-volume absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                    ></i>
+                    <input
+                      type="tel"
+                      placeholder="এখানে লিখুন"
+                      class="w-full py-3 pl-10 pr-4 rounded-lg bg-[#F4F8FC] border border-[#A9B0B8] focus:border-[#4285FA] outline-none text-sm"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="text-sm">ক্যারিয়ারের লক্ষ্য</label>
+                  <div class="relative mt-1">
+                    <i
+                      class="fa-regular fa-user absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                    ></i>
+                    <input
+                      type="text"
+                      placeholder="এখানে লিখুন"
+                      class="w-full py-3 pl-10 pr-4 rounded-lg bg-[#F4F8FC] border border-[#A9B0B8] focus:border-[#4285FA] outline-none text-sm"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <button
+                class="w-full mt-6 py-3 rounded-lg bg-[#4285FA] text-white font-medium hover:opacity-90 transition"
+              >
+                আমার আসন বুক করুন →
+              </button>
+
+              <p class="text-xs text-gray-500 mt-3">
                 এখানে কিছু মানানসই টেক্সট থাকবে
               </p>
             </div>
@@ -222,1276 +1765,443 @@
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Banner part (Saimum) -->
+    <!-- ready part end {jeba}-->
 
-  <!-- promotional video{Mahir} -->
-  <section class="py-[60px] lg:pb-[140px] overflow-hidden">
-    <div class="max-w-[1140px] mx-auto px-3 lg:px-0">
-      <div>
-        <h2
-          class="text-[#1E1E1F] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%] font-extrabold  text-center px-4">
-          এখানে প্রচারমূলক <span class="text-[#4285FA]">ভিডিও থাকবে</span>
-        </h2>
+    <!-- frequently asked questions part {shakib}  -->
 
-        <p
-          class="w-full lg:w-[809px] text-sm sm:text-base md:text-lg leading-[150%] text-center mx-auto  text-[#38435C] mt-4 mb-6 sm:mb-8 px-4">
-          লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
-          ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
-          আলট্রিসিস.
-        </p>
-
-        <div class="relative w-full max-w-[1170px] mx-auto aspect-video mb-8 sm:mb-12 px-4">
-          <img src="./src/images/Group 22.png"
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[641px] object-contain scale-130 box box2 box3 -z-10 hidden xl:block"
-            alt="Background Decoration" />
-
-          <div
-            class="w-[1600px] h-[376px] bg-[#34a85339] animate-blur absolute left-[-20%] top-[12%] -rotate-5 blur-[100px] rounded-[100%]">
+    <section>
+      <div class="relative max-w-[1320px] px-4 lg:px-0 gap-x-[80px] mx-auto">
+        <div class="hidden lg:block absolute left-0 top-[355px]">
+          <img
+            src="./src/images/marketing1.png"
+            alt="arrow"
+            class="h-[280px]"
+          />
+        </div>
+        <div class="max-w-[872px] mx-auto">
+          <div>
+            <div>
+              <h1
+                class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[150%] font-extrabold"
+              >
+                প্রায়শই জিজ্ঞাসিত
+                <span class="text-[#4285FA]">প্রশ্নসমূহ </span>
+              </h1>
+            </div>
+            <p class="mt-3 text-[#38435C] max-w-[809px] mx-auto text-center">
+              লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট
+              ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট
+              ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
+              ডিয়াম ডিয়াম টেলুস আলট্রিসিস
+            </p>
           </div>
-
-          <div class="relative z-10 w-full h-full">
+          <div class="space-y-6 mt-8">
             <div
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40px] h-[40px] bg-white rounded-full animate-blinkAnmations">
-            </div>
-            <iframe class="w-full h-full rounded-xl sm:rounded-2xl border-4 md:border-8 border-[#34A853] shadow-xl"
-              src="https://www.youtube.com/embed/TD_N2VR3P1s" title="Promotional Video" allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                " allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 items-center md:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12 px-4">
-          <div class="text-center md:text-left">
-            <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2 capitalize text-[#1E1E1F]">
-              এখানে কিছু টেক্সট থাকবে
-            </h3>
-            <p class="text-xs sm:text-sm md:text-base text-[#38435C] leading-relaxed">
-              লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
-              ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক
-            </p>
-          </div>
-          <div class="text-center md:text-left">
-            <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2 capitalize text-[#1E1E1F]">
-              এখানে কিছু টেক্সট থাকবে
-            </h3>
-            <p class="text-xs sm:text-sm md:text-base text-[#38435C] leading-relaxed">
-              লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
-              ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক
-            </p>
-          </div>
-          <div class="text-center md:text-left">
-            <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2 capitalize text-[#1E1E1F]">
-              এখানে কিছু টেক্সট থাকবে
-            </h3>
-            <p class="text-xs sm:text-sm md:text-base text-[#38435C] leading-relaxed">
-              লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
-              ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক
-            </p>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- promotional video{Mahir} -->
-
-  <!-- ==========================================================================
-                  free sections start
-   ============================================================================ -->
-
-  <section class="py-[64px]  bg-[#E9F0F8] mb-[140px]">
-    <div class="max-w-[1140px] mx-auto">
-      <div>
-        <h2
-          class="text-[#1E1E1F] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[120%] font-extrabold  text-center px-4">
-          বিনামূল্যে আপনার <span class="text-[#4285FA]">সেশন নির্বাচন করুন</span>
-        </h2>
-
-        <p
-          class="w-full lg:w-[809px] text-sm sm:text-base md:text-lg leading-[150%] text-center mx-auto  text-[#38435C] mt-4 mb-6 sm:mb-8 px-4">
-          লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
-          ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
-          আলট্রিসিস.
-        </p>
-      </div>
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-5">
-        <div class="p-[14px] bg-white rounded-[20px]">
-          <div>
-            <figure>
-              <img src="./src/images/freeone.png" alt="freeone" class="w-full rounded-[16px]    object-cover">
-            </figure>
-          </div>
-          <div class="pt-4 space-y-7">
-            <p class="font-normal  text-base/[150%] text-[#1E1E1F] truncate ">ক্যারিয়ার গাইডেন্সের জন্য মেন্টরের সাথে কথা বলুন
-            </p>
-            <div class="flex justify-between items-center">
-              <figure>
-                <img src="./src/images/citlogo.png" alt="cit-logo">
-              </figure>
-              <button
-                class="py-2 px-3 bg-[#4285FA] text-white rounded-[10px]  flex items-center  gap-x-2  font-semibold text-[13px] cursor-pointer">ফ্রিতে
-                বুক করুন <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </div>
-        </div>
-        <div class="p-[14px] bg-white rounded-[20px]">
-          <div>
-            <figure>
-              <img src="./src/images/freetwo.png" alt="freeone" class="w-full rounded-[16px]    object-cover">
-            </figure>
-          </div>
-          <div class="pt-4 space-y-7">
-            <p class="font-normal  text-base/[150%] text-[#1E1E1F] ">বিনামূল্যে ৩ দিনের  ডেমো ক্লাস বুক করুন
-            </p>
-            <div class="flex justify-between items-center">
-              <figure>
-                <img src="./src/images/citlogo.png" alt="cit-logo">
-              </figure>
-              <button
-                class="py-2 px-3 bg-[#4285FA] text-white rounded-[10px]  flex items-center  gap-x-2  cursor-pointer font-semibold text-[13px]">ফ্রিতে
-                বুক করুন <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </div>
-        </div>
-        <div class="p-[14px] bg-white rounded-[20px]">
-          <div>
-            <figure>
-              <img src="./src/images/freethree.png" alt="freeone" class="w-full rounded-[16px]    object-cover">
-            </figure>
-          </div>
-          <div class="pt-4 space-y-7">
-            <p class="font-normal  text-base/[150%] text-[#1E1E1F] truncate">অ্যাডমিশন টিমের সাথে সরাসরি কথা বলুন
-            </p>
-            <div class="flex justify-between items-center">
-              <figure>
-                <img src="./src/images/citlogo.png" alt="cit-logo">
-              </figure>
-              <button
-                class="py-2 px-3 bg-[#4285FA] text-white rounded-[10px]  cursor-pointer flex items-center  gap-x-2  font-semibold text-[13px]">ফ্রিতে
-                বুক করুন <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </div>
-        </div>
-        <div class="p-[14px] bg-white rounded-[20px]">
-          <div>
-            <figure>
-              <img src="./src/images/freefour.png" alt="freeone" class="w-full rounded-[16px]    object-cover">
-            </figure>
-          </div>
-          <div class="pt-4 space-y-7">
-            <p class="font-normal  text-base/[150%] text-[#1E1E1F] ">ছন্দের সেমিনারে অংশ নিন
-            </p>
-            <div class="flex justify-between items-center">
-              <figure>
-                <img src="./src/images/citlogo.png" alt="cit-logo">
-              </figure>
-              <button
-                class="py-2 px-3 bg-[#4285FA] text-white rounded-[10px]  cursor-pointer flex items-center  gap-x-2  font-semibold text-[13px]">ফ্রিতে
-                বুক করুন <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-                  free sections end
-   ============================================================================ -->
-
-
-  <!-- =======================================================================================
-                            Course Module part start {Jhulon kumar}
-        ====================================================================================== -->
-  <section class="px-3 pt-[50px] md:pt-[120px] lg:pt-[150px] pb-[70px] lg:pb-[140px] relative overflow-hidden">
-    <div
-      class="w-[140%] h-[200px] sm:w-[140%] sm:h-[360px] md:w-[140%] md:h-[400px] lg:w-[140%] lg:h-[744px] bg-gradient-to-t from-[#FFFFFF] from-70% to-[#fcba05cc] opacity-30 to-100% rounded-[50%] absolute top-0 left-[50%] translate-x-[-50%] z-[-1]">
-    </div>
-    <div class="max-w-[1140px] mx-auto">
-      <div class="z-20">
-        <h2
-          class="text-[#1E1E1F] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[150%] font-extrabold  text-center">
-          এখানে কোর্স <span class="text-[#4285FA]">মডিউল থাকবে</span>
-        </h2>
-        <p class="lg:w-[809px] text-center mx-auto  font-normal text-lg/[120%] text-[#38435C] mt-4 mb-8">
-          লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
-          ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
-          আলট্রিসিস
-        </p>
-      </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-6">
-        <div class="space-y-6">
-          <div>
-            <div id="accordion-collapse-1" data-accordion="collapse"
-              class="rounded-base border-2 border-[#4285FA] overflow-hidden">
-              <h2 id="accordion-collapse-heading-1 !border">
-                <button type="button"
-                  class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
-                  data-accordion-target="#accordion-collapse-body-1" aria-controls="accordion-collapse-body-1  "
-                  aria-expanded="true" style="background-color: transparent">
+              id="accordion-collapse-12"
+              data-accordion="collapse"
+              class="rounded-base border-2 p-3 border-[#4285FA] overflow-hidden"
+              style="background-color: #f4f8fc"
+            >
+              <h2 id="accordion-collapse-heading-12 !border">
+                <button
+                  type="button"
+                  class="faqbutton flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
+                  data-accordion-target="#accordion-collapse-body-12"
+                  aria-controls="accordion-collapse-body-12"
+                  style="background-color: transparent"
+                  aria-expanded="true"
+                >
                   <span
-                    class="text-[#1E1E1F]  text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3">
-                    <div>
-                      <img src="src/images/Container.png" alt="Container" />
-                    </div>
-                    মডিউলের টাইটেল এখানে থাকবে
-                  </span>
-                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m5 15 7-7 7 7" />
-                  </svg>
+                    class="text-[#1E1E1F] text-lg/[150%] font-semibold text-start"
+                  >
+                    প্রায়শই জিজ্ঞাসিত প্রশ্নের জন্য শিরোনাম এখানে থাকবে</span
+                  >
+                  <span class="font-normal text-[#4285FA] faqPlus"
+                    ><i class="fa-solid fa-minus"></i
+                  ></span>
                 </button>
               </h2>
-              <div id="accordion-collapse-body-1" class="hidden border-b-default"
-                aria-labelledby="accordion-collapse-heading-1">
-                <div class="p-4 lg:pt-0 md:p-5">
-                  <p class="mb-2 text-[#38435C]  text-[14px]/[150%] font-normal">
-                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                    পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                    ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ
-                    এস্ট অ্যাট নন সাসিপিট।
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="accordion-collapse-2" data-accordion="collapse"
-              class="rounded-base border-2 border-[#F88513] overflow-hidden">
-              <h2 id="accordion-collapse-heading-2 !border">
-                <button type="button"
-                  class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
-                  data-accordion-target="#accordion-collapse-body-2" aria-controls="accordion-collapse-body-2"
-                  style="background-color: transparent">
-                  <span
-                    class="text-[#1E1E1F]  text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3">
-                    <div><img src="src/images/Container2.png" alt="" /></div>
-                    মডিউলের টাইটেল এখানে থাকবে
-                  </span>
-                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m5 15 7-7 7 7" />
-                  </svg>
-                </button>
-              </h2>
-              <div id="accordion-collapse-body-2" class="hidden border-b-default"
-                aria-labelledby="accordion-collapse-heading-2 ">
-                <div class="p-4 lg:pt-0 md:p-5">
-                  <p class="mb-2 text-[#38435C]  text-[14px]/[150%] font-normal">
-                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                    পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                    ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ
-                    এস্ট অ্যাট নন সাসিপিট।
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div id="accordion-collapse-3" data-accordion="collapse"
-              class="rounded-base border-2 border-[#4285FA] overflow-hidden">
-              <h2 id="accordion-collapse-heading-3 !border">
-                <button type="button"
-                  class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
-                  style="background-color: transparent" data-accordion-target="#accordion-collapse-body-3"
-                  aria-controls="accordion-collapse-body-3">
-                  <span
-                    class="text-[#1E1E1F]  text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3">
-                    <div>
-                      <img src="src/images/Container.png" alt="Container" />
-                    </div>
-                    মডিউলের টাইটেল এখানে থাকবে
-                  </span>
-                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m5 15 7-7 7 7" />
-                  </svg>
-                </button>
-              </h2>
-              <div id="accordion-collapse-body-3" class="hidden border-b-default"
-                aria-labelledby="accordion-collapse-heading-3">
-                <div class="p-4 lg:pt-0 md:p-5">
+              <div
+                id="accordion-collapse-body-12"
+                class="hidden border-b-default"
+                aria-labelledby="accordion-collapse-heading-12"
+              >
+                <div class="p-2">
                   <p class="mb-2 text-[#38435C] text-[14px]/[150%] font-normal">
-                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                    পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                    ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ
-                    এস্ট অ্যাট নন সাসিপিট।
+                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                    টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                    ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট
+                    ভোল্পুট লোবারটিস।
                   </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div id="accordion-collapse-4" data-accordion="collapse"
-              class="rounded-base border-2 border-[#F88513] overflow-hidden">
-              <h2 id="accordion-collapse-heading-4 !border">
-                <button type="button" style="background-color: transparent"
-                  class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
-                  data-accordion-target="#accordion-collapse-body-4" aria-controls="accordion-collapse-body-4">
+            <div
+              id="accordion-collapse-13"
+              data-accordion="collapse"
+              class="rounded-base border-2 p-3 border-transparent overflow-hidden"
+              style="background-color: #f4f8fc"
+            >
+              <h2 id="accordion-collapse-heading-13 !border">
+                <button
+                  type="button"
+                  class="faqbutton flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
+                  data-accordion-target="#accordion-collapse-body-13"
+                  aria-controls="accordion-collapse-body-13"
+                  style="background-color: transparent"
+                >
                   <span
-                    class="text-[#1E1E1F]  text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3">
-                    <div><img src="src/images/Container2.png" alt="" /></div>
-                    মডিউলের টাইটেল এখানে থাকবে
+                    class="text-[#1E1E1F] text-lg/[150%] font-semibold text-start"
+                  >
+                    প্রায়শই জিজ্ঞাসিত প্রশ্নের জন্য শিরোনাম এখানে থাকবে</span
+                  >
+                  <span class="font-normal text-[#4285FA] faqPlus">
+                    <i class="fa-solid fa-plus"></i>
                   </span>
-                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m5 15 7-7 7 7" />
-                  </svg>
                 </button>
               </h2>
-              <div id="accordion-collapse-body-4" class="hidden border-b-default"
-                aria-labelledby="accordion-collapse-heading-4">
-                <div class="p-4 lg:pt-0 md:p-5">
-                  <p class="mb-2 text-[#38435C]  text-[14px]/[150%] font-normal">
-                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                    পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                    ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ
-                    এস্ট অ্যাট নন সাসিপিট।
+              <div
+                id="accordion-collapse-body-13"
+                class="hidden border-b-default"
+                aria-labelledby="accordion-collapse-heading-13"
+              >
+                <div class="p-2">
+                  <p class="mb-2 text-[#38435C] text-[14px]/[150%] font-normal">
+                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                    টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                    ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট
+                    ভোল্পুট লোবারটিস।
                   </p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="space-y-6 mt-6 lg:mt-0">
-          <div>
-            <div id="accordion-collapse-5" data-accordion="collapse"
-              class="rounded-base border-2 border-[#DF3636] overflow-hidden">
-              <h2 id="accordion-collapse-heading-5 !border">
-                <button type="button" style="background-color: transparent"
-                  class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
-                  data-accordion-target="#accordion-collapse-body-5" aria-controls="accordion-collapse-body-5"
-                  aria-expanded="true">
+            <div
+              id="accordion-collapse-14"
+              data-accordion="collapse"
+              class="rounded-base border-2 p-3 border-transparent overflow-hidden"
+              style="background-color: #f4f8fc"
+            >
+              <h2 id="accordion-collapse-heading-14 !border">
+                <button
+                  type="button"
+                  class="faqbutton flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
+                  data-accordion-target="#accordion-collapse-body-14"
+                  aria-controls="accordion-collapse-body-14"
+                  style="background-color: transparent"
+                >
                   <span
-                    class="text-[#1E1E1F] text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3">
-                    <div><img src="src/images/Container3.png" alt="" /></div>
-                    মডিউলের টাইটেল এখানে থাকবে
+                    class="text-[#1E1E1F] text-lg/[150%] font-semibold text-start"
+                  >
+                    প্রায়শই জিজ্ঞাসিত প্রশ্নের জন্য শিরোনাম এখানে থাকবে</span
+                  >
+                  <span class="font-normal text-[#4285FA] faqPlus">
+                    <i class="fa-solid fa-plus"></i>
                   </span>
-                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m5 15 7-7 7 7" />
-                  </svg>
                 </button>
               </h2>
-              <div id="accordion-collapse-body-5" class="hidden border-b-default"
-                aria-labelledby="accordion-collapse-heading-5">
-                <div class="p-4 lg:pt-0 md:p-5">
-                  <p class="mb-2 text-[#38435C]  text-[14px]/[150%] font-normal">
-                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                    পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                    ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ
-                    এস্ট অ্যাট নন সাসিপিট।
+              <div
+                id="accordion-collapse-body-14"
+                class="hidden border-b-default"
+                aria-labelledby="accordion-collapse-heading-14"
+              >
+                <div class="p-2">
+                  <p
+                    class="faqbutton mb-2 text-[#38435C] text-[14px]/[150%] font-normal"
+                  >
+                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                    টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                    ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট
+                    ভোল্পুট লোবারটিস।
                   </p>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div>
-            <div id="accordion-collapse-6" data-accordion="collapse"
-              class="rounded-base border-2 border-[#34A853] overflow-hidden">
-              <h2 id="accordion-collapse-heading-6 !border">
-                <button type="button" style="background-color: transparent"
-                  class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
-                  data-accordion-target="#accordion-collapse-body-6" aria-controls="accordion-collapse-body-6">
+            <div
+              id="accordion-collapse-15"
+              data-accordion="collapse"
+              class="rounded-base border-2 p-3 border-transparent overflow-hidden"
+              style="background-color: #f4f8fc"
+            >
+              <h2 id="accordion-collapse-heading-15 !border">
+                <button
+                  type="button"
+                  class="faqbutton flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
+                  data-accordion-target="#accordion-collapse-body-15"
+                  aria-controls="accordion-collapse-body-15"
+                  style="background-color: transparent"
+                >
                   <span
-                    class="text-[#1E1E1F]  text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3">
-                    <div><img src="src/images/Container4.png" alt="" /></div>
-                    মডিউলের টাইটেল এখানে থাকবে
+                    class="text-[#1E1E1F] text-lg/[150%] font-semibold text-start"
+                  >
+                    প্রায়শই জিজ্ঞাসিত প্রশ্নের জন্য শিরোনাম এখানে থাকবে</span
+                  >
+                  <span class="font-normal text-[#4285FA] faqPlus">
+                    <i class="fa-solid fa-plus"></i>
                   </span>
-                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m5 15 7-7 7 7" />
-                  </svg>
                 </button>
               </h2>
-              <div id="accordion-collapse-body-6" class="hidden border-b-default"
-                aria-labelledby="accordion-collapse-heading-6">
-                <div class="p-4 lg:pt-0 md:p-5">
-                  <p class="mb-2 text-[#38435C]  text-[14px]/[150%] font-normal">
-                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                    পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                    ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ
-                    এস্ট অ্যাট নন সাসিপিট।
+              <div
+                id="accordion-collapse-body-15"
+                class="hidden border-b-default"
+                aria-labelledby="accordion-collapse-heading-15"
+              >
+                <div class="p-2">
+                  <p class="mb-2 text-[#38435C] text-[14px]/[150%] font-normal">
+                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট
+                    টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের ম্যাসেনাস
+                    ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট
+                    ভোল্পুট লোবারটিস।
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div>
-            <div id="accordion-collapse-7" data-accordion="collapse"
-              class="rounded-base border-2 border-[#DF3636] overflow-hidden">
-              <h2 id="accordion-collapse-heading-7 !border">
-                <button type="button" style="background-color: transparent"
-                  class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
-                  data-accordion-target="#accordion-collapse-body-7" aria-controls="accordion-collapse-body-7">
-                  <span
-                    class="text-[#1E1E1F]  text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3">
-                    <div><img src="src/images/Container3.png" alt="" /></div>
-                    মডিউলের টাইটেল এখানে থাকবে
-                  </span>
-                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m5 15 7-7 7 7" />
-                  </svg>
-                </button>
-              </h2>
-              <div id="accordion-collapse-body-7" class="hidden border-b-default"
-                aria-labelledby="accordion-collapse-heading-7">
-                <div class="p-4 lg:pt-0 md:p-5">
-                  <p class="mb-2 text-[#38435C]  text-[14px]/[150%] font-normal">
-                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                    পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                    ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ
-                    এস্ট অ্যাট নন সাসিপিট।
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <div>
-            <div id="accordion-collapse-8" data-accordion="collapse"
-              class="rounded-base border-2 border-[#34A853] overflow-hidden">
-              <h2 id="accordion-collapse-heading-8 !border">
-                <button type="button" style="background-color: transparent"
-                  class="flex sm:items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3"
-                  data-accordion-target="#accordion-collapse-body-8" aria-controls="accordion-collapse-body-8">
-                  <span
-                    class="text-[#1E1E1F]  text-lg/[150%] font-semibold flex sm:items-center justify-between gap-x-3">
-                    <div><img src="src/images/Container4.png" alt="" /></div>
-                    মডিউলের টাইটেল এখানে থাকবে
-                  </span>
-                  <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m5 15 7-7 7 7" />
-                  </svg>
-                </button>
-              </h2>
-              <div id="accordion-collapse-body-8" class="hidden border-b-default"
-                aria-labelledby="accordion-collapse-heading-8">
-                <div class="p-4 lg:pt-0 md:p-5">
-                  <p class="mb-2 text-[#38435C]  text-[14px]/[150%] font-normal">
-                    লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                    পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                    ডিয়াম ডিয়াম টেলুস আলট্রিসিস। লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ
-                    এস্ট অ্যাট নন সাসিপিট।
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="hidden lg:block absolute right-0 top-[355px]">
+          <img
+            src="./src/images/marketing2.png"
+            alt="bar"
+            class="h-[280px] hidden lg:block"
+          />
         </div>
       </div>
+    </section>
 
-      <div class="flex justify-center">
-        <button
-          class="mt-8 border border-[#4285FA] bg-[#4285FA] transition duration-700 ease-in-out hover:bg-white hover:text-[#4285FA] text-white px-4 py-3 rounded-md">
-          আরও দেখুন <i class="fa-solid fa-chevron-down ml-2"></i>
-        </button>
-      </div>
-    </div>
-  </section>
-  <!-- =======================================================================================
-                          Course Module part end {Jhulon kumar}
-     ====================================================================================== -->
+    <!-- frequently asked questions part end {shakib} -->
 
-  <!-- =================================================== 
-                        Bannar part ( jobayer)
-     ======================================================== -->
-
-  <section class="pb:[40px] lg:pb-[100px]">
-    <div
-      class="relative bg-cover bg-center w-full min-h-[200px] sm:min-h-[300px] lg:min-h-[450px] flex justify-center items-center px-4"
-      style="background-image: url(./src/images/eye1.png)">
-      <!-- Overlay -->
-
-      <!-- Content -->
-      <h2
-        class="relative text-white font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center leading-tight">
-        চোখে পড়ার মতো ডিজিটাল মার্কেটিং ব্যানার
-      </h2>
-    </div>
-  </section>
-
-  <!-- =================================================
-                  Banner part finished (jobayer)
-   =========================================================== -->
-
-  <!-- =======================================================================================
-                          journey roadmape part start {Jhulon kumar}
-     ====================================================================================== -->
-  <section class="p-10 mb-[50px] lg:mb-[140px] relative">
-    <div class="bg-[#34A853] w-[50%] h-[10%] absolute left-1/2 top-[65%] blur-[150px] -translate-1/2 z-10"></div>
-    <div class="bg-[#d9ebfa] w-[100%] h-[50%] rounded-full absolute left-1/2 top-[65%] blur-[150px] z-0 -translate-1/2">
-    </div>
-    <div class="max-w-[1140px] mx-auto">
-      <div class="z-20">
-        <h2
-          class="text-[#1E1E1F] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[150%] font-extrabold  text-center">
-          একটি এক্সাইটিং <span class="text-[#4285FA] ml-2">লার্নিং জার্নি রোডম্যাপ</span>
-        </h2>
-        <p class="lg:max-w-[809px] text-center mx-auto  font-normal text-lg/[120%] text-[#38435C] mt-4 mb-8">
-          লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
-          ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
-          আলট্রিসিস
-        </p>
-      </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div class="p-[2px] rounded-lg overflow-hidden relative z-20 shadow-xl">
-          <div
-            class="absolute w-[150px] h-[200px] blur-xl bg-[#5B8FFF] animate-rounded3 z-[-1] top-[-50%] translate-y-[15%] left-0">
-          </div>
-          <div class="p-6 bg-white rounded-lg">
-            <div class="flex items-center">
-              <span class="text-[#4285FA] bg-[#F1F5FF] py-1 px-4 text-[32px]/[150%]  font-semibold rounded">1</span>
-              <div class="bg-linear-to-l from-[#FFFFFF] to-[#4285FA] h-2 w-full"></div>
-            </div>
-            <div class="mt-4">
-              <p class="text-xl/[150%] font-semibold  text-[#38435C]">
-                লার্নিং জার্নির শিরোনাম এখানে থাকবে
-              </p>
-              <p class=" text-[14px]/[150%] font-normal text-[#6F7B88] mt-2">
-                লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস।
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="p-[2px] rounded-lg overflow-hidden relative z-20 shadow-xl">
-          <div class="absolute w-[150px] h-[200px] blur-xl bg-[#34A853] z-[-1] top-[50%] left-0"></div>
-          <div class="p-6 bg-white rounded-lg">
-            <div class="flex items-center">
-              <span class="text-[#34A853] bg-[#EFF8F2] py-1 px-4 text-[32px]/[150%]   font-semibold rounded">2</span>
-              <div class="bg-linear-to-l from-[#FFFFFF] to-[#34A853] h-2 w-full"></div>
-            </div>
-            <div class="mt-4">
-              <p class="text-xl/[150%] font-semibold  text-[#38435C]">
-                লার্নিং জার্নির শিরোনাম এখানে থাকবে
-              </p>
-              <p class=" text-[14px]/[150%] font-normal text-[#6F7B88] mt-2">
-                লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস।
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="p-[2px] rounded-lg overflow-hidden relative z-20 shadow-xl">
-          <div
-            class="absolute w-[200px] h-[200px] blur-xl animate-rounded4 bg-[#F88513] z-[-1] top-[-50%] translate-y-[15%] right-0">
-          </div>
-          <div class="p-6 bg-white rounded-lg">
-            <div class="flex items-center">
-              <span class="text-[#F88513] bg-[#FDF5E6] py-1 px-4 text-[32px]/[150%]   font-semibold rounded">3</span>
-              <div class="bg-linear-to-l from-[#FFFFFF] to-[#F88513] h-2 w-full"></div>
-            </div>
-            <div class="mt-4">
-              <p class="text-xl/[150%] font-semibold  text-[#38435C]">
-                লার্নিং জার্নির শিরোনাম এখানে থাকবে
-              </p>
-              <p class=" text-[14px]/[150%] font-normal text-[#6F7B88] mt-2">
-                লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস।
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div class="p-[2px] rounded-lg overflow-hidden relative z-20 shadow-xl">
-          <div
-            class="absolute w-[250px] h-[250px] animate-rounded4 blur-xl bg-[#DF3636] z-[-1] bottom-[-50%] translate-y-[%] left-0">
-          </div>
-          <div class="p-6 bg-white rounded-lg">
-            <div class="flex items-center">
-              <span class="text-[#DF3636] bg-[#FFE9E9] py-1 px-4 text-[32px]/[150%]   font-semibold rounded">4</span>
-              <div class="bg-linear-to-l from-[#FFFFFF] to-[#DF3636] h-2 w-full"></div>
-            </div>
-            <div class="mt-4">
-              <p class="text-xl/[150%] font-semibold  text-[#38435C]">
-                লার্নিং জার্নির শিরোনাম এখানে থাকবে
-              </p>
-              <p class=" text-[14px]/[150%] font-normal text-[#6F7B88] mt-2">
-                লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস।
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="p-[2px] rounded-lg overflow-hidden relative z-20 shadow-xl">
-          <div
-            class="absolute w-[250px] h-[250px] blur-xl bg-[#4285FA] z-[-1] animate-rounded5 bottom-[-50%] translate-y-[%] right-0">
-          </div>
-          <div class="p-6 bg-white rounded-lg">
-            <div class="flex items-center">
-              <span class="text-[#4285FA] bg-[#F1F5FF] py-1 px-4 text-[32px]/[150%]   font-semibold rounded">5</span>
-              <div class="bg-linear-to-l from-[#FFFFFF] to-[#4285FA] h-2 w-full"></div>
-            </div>
-            <div class="mt-4">
-              <p class="text-xl/[150%] font-semibold  text-[#38435C]">
-                লার্নিং জার্নির শিরোনাম এখানে থাকবে
-              </p>
-              <p class=" text-[14px]/[150%] font-normal text-[#6F7B88] mt-2">
-                লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস।
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- =======================================================================================
-                          journey roadmap part end {Jhulon kumar}
-     ====================================================================================== -->
-
-  <!-- ====================================================
-             Our student stories (jobayer)
-    ========================================================-->
-
-  <section class="px-4 pt-[40px] lg:pt-0">
-    <div class="max-w-[1140px] mx-auto">
-      <!-- Heading Area -->
-      <div class="text-center mb-12 ]">
-        <h2 class="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[150%] text-black">
-          আমাদের শিক্ষার্থীরাই
-          <span class="!text-[#4285FA]"> গল্প শেয়ার করেছেন </span>
-        </h2>
-
-        <p class="text-[#38435C] max-w-[950px] mx-auto text-base sm:text-lg leading-relaxed mt-6">
-          লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
-          ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
-          আলট্রিসিস
-        </p>
-      </div>
-    </div>
-
-    <!-- Cards -->
-    <div class="bg-white overflow-hidden">
-      <div class="">
-        <div class="slider-container overflow-hidden py-5">
-          <div class="track flex gap-x-3 md:gap-x-5 transition-transform duration-700 ease-in-out">
-
-            <div class="item flex flex-col bg-[#FFFBEB] p-5 rounded-3xl shadow-sm border border-orange-50 shrink-0">
-              <div class="flex items-center gap-6">
-                <img src="./src/images/jhulon1.png" class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
-                  alt="User" />
-                <div class="flex-1">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="font-bold text-gray-800">5.0</span>
-                    <div class="flex text-yellow-400 text-xs">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                  <p class="text-gray-600 text-[13px] italic mb-3 line-clamp-3">
-                    "এই কোর্সটি আমার জন্য খুবই সহায়ক ছিল এবং এখান থেকে আমি অনেক নতুন কিছু শিখতে পেরেছি।"
-                  </p>
-                  <h4 class="font-bold text-gray-900 text-sm">
-                    ঝুলন কুমার রায়
-                  </h4>
-                  <p class="text-gray-500 text-[11px]">ব্যাচ - FDR 2415</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item flex flex-col bg-[#FFF7ED] p-5 rounded-3xl shadow-sm border border-orange-50 shrink-0">
-              <div class="flex items-center gap-6">
-                <img src="./src/images/saimum.png" class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
-                  alt="User" />
-                <div class="flex-1">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="font-bold text-gray-800">5.0</span>
-                    <div class="flex text-yellow-400 text-xs">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                  <p class="text-gray-600 text-[13px] italic mb-3 line-clamp-3">
-                    "এই প্রশিক্ষণের মাধ্যমে আমি অনেক নতুন দক্ষতা অর্জন করেছি এবং বাস্তব কাজে তা ব্যবহার করতে পারছি।"
-                  </p>
-                  <h4 class="font-bold text-gray-900 text-sm">
-                    আবু সাঈদ সাইমুম
-                  </h4>
-                  <p class="text-gray-500 text-[11px]">ব্যাচ - FDR 2415</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item flex flex-col bg-[#FFF1F2] p-5 rounded-3xl shadow-sm border border-rose-50 shrink-0">
-              <div class="flex items-center gap-6">
-                <img src="./src/images/moazeem.jpg" class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
-                  alt="User" />
-                <div class="flex-1">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="font-bold text-gray-800">5.0</span>
-                    <div class="flex text-yellow-400 text-xs">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                  <p class="text-gray-600 text-[13px] italic mb-3 line-clamp-3">
-                    "এই কোর্সটি আমাকে ওয়েব ডেভেলপমেন্ট সম্পর্কে পরিষ্কার ধারণা দিয়েছে।"
-                  </p>
-                  <h4 class="font-bold text-gray-900 text-sm">
-                    মোয়াজ্জেম হোসেন
-                  </h4>
-                  <p class="text-gray-500 text-[11px]">ইন্টার্ন - EBT-WEB-1</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item flex flex-col bg-[#F0F9FF] p-5 rounded-3xl shadow-sm border border-sky-50 shrink-0">
-              <div class="flex items-center gap-6">
-                <img src="./src/images/jeba.jpg" class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
-                  alt="User" />
-                <div class="flex-1">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="font-bold text-gray-800">5.0</span>
-                    <div class="flex text-yellow-400 text-xs">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                  <p class="text-gray-600 text-[13px] italic mb-3 line-clamp-3">
-                    "এখানকার শেখানোর পদ্ধতি খুব সহজ এবং পরিষ্কার ছিল।"
-                  </p>
-                  <h4 class="font-bold text-gray-900 text-sm">জেবা খানম</h4>
-                  <p class="text-gray-500 text-[11px]">ইন্টার্ন - EBT-WEB-1</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item flex flex-col bg-[#F5F3FF] p-5 rounded-3xl shadow-sm border border-violet-50 shrink-0">
-              <div class="flex items-center gap-6">
-                <img src="./src/images/shakib.jpg" class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
-                  alt="User" />
-                <div class="flex-1">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="font-bold text-gray-800">5.0</span>
-                    <div class="flex text-yellow-400 text-xs">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                  <p class="text-gray-600 text-[13px] italic mb-3 line-clamp-3">
-                    "এই কোর্স করার পর আমি বাস্তব প্রজেক্টে কাজ করার আত্মবিশ্বাস পেয়েছি।"
-                  </p>
-                  <h4 class="font-bold text-gray-900 text-sm">সাকিব সালিম</h4>
-                  <p class="text-gray-500 text-[11px]">ইন্টার্ন - EBT-WEB-1</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item flex flex-col bg-[#FFFBEB] p-5 rounded-3xl shadow-sm border border-orange-50 shrink-0">
-              <div class="flex items-center gap-6">
-                <img src="./src/images/mahir.jpg" class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
-                  alt="User" />
-                <div class="flex-1">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="font-bold text-gray-800">5.0</span>
-                    <div class="flex text-yellow-400 text-xs">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                  <p class="text-gray-600 text-[13px] italic mb-3 line-clamp-3">
-                    "এই প্রশিক্ষণ আমার ক্যারিয়ারের জন্য খুবই সহায়ক হয়েছে।"
-                  </p>
-                  <h4 class="font-bold text-gray-900 text-sm">মাহির হাসিন</h4>
-                  <p class="text-gray-500 text-[11px]">ইন্টার্ন - EBT-WEB-1</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item flex flex-col bg-[#F0FDF4] p-5 rounded-3xl shadow-sm border border-green-50 shrink-0">
-              <div class="flex items-center gap-6">
-                <img src="./src/images/jobayer.jpg" class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
-                  alt="User" />
-                <div class="flex-1">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="font-bold text-gray-800">5.0</span>
-                    <div class="flex text-yellow-400 text-xs">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                  <p class="text-gray-600 text-[13px] italic mb-3 line-clamp-3">
-                    "এখানে শেখার পরিবেশ খুব ভালো এবং মেন্টররা সব সময় সহায়তা করেছেন।"
-                  </p>
-                  <h4 class="font-bold text-gray-900 text-sm">
-                    মোঃ জোবায়ের হোসেন
-                  </h4>
-                  <p class="text-gray-500 text-[11px]">ইন্টার্ন - EBT-WEB-1</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item flex flex-col bg-[#F0FDF4] p-5 rounded-3xl shadow-sm border border-green-50 shrink-0">
-              <div class="flex items-center gap-6">
-                <img src="./src/images/najnin.jpg" class="lg:w-40 lg:h-40 w-32 h-32 object-cover rounded-2xl shadow-md"
-                  alt="User" />
-                <div class="flex-1">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="font-bold text-gray-800">5.0</span>
-                    <div class="flex text-yellow-400 text-xs">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                  <p class="text-gray-600 text-[13px] italic mb-3 line-clamp-3">
-                    "এই কোর্সটি আমার জন্য খুবই উপকারী ছিল এবং আমি অনেক নতুন দক্ষতা অর্জন করেছি।"
-                  </p>
-                  <h4 class="font-bold text-gray-900 text-sm">
-                    নাজনিন ইমু
-                  </h4>
-                  <p class="text-gray-500 text-[11px]">ইন্টার্ন - EBT-WEB-1</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="flex justify-center gap-2 mt-5" id="pagination-lines"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================ 
-                Our student stories finished (jobayer)
-    ================================================================== -->
-
-  <!-- ready part start   {jeba} -->
-
-  <div class="py-[40px] relative z-50 mt-[50px] lg:mt-0 lg:py-[140px]">
-    <div
-      class="w-full absolute z-[-1] h-[400px] bg-[#fff6df75] animate-blur blur-[100px] left-[50%] top-[80%] -translate-1/2 rounded-[100%]">
-    </div>
-
-    <div
-      class="max-w-[1140px] mx-auto py-8 md:py-[70px] px-[10px] md:px-[60px] bg-no-repeat bg-cover bg-center rounded-lg"
-      style="background-image: url(./src/images/ready-part-images.png)">
-      <div class="grid z-20 grid-cols-1 lg:grid-cols-2 gap-10 items-center rounded-2xl w-full">
-        <!-- LEFT -->
-        <div class="flex flex-col items-center lg:items-start">
-          <h3 class="  font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1E1E1F] leading-[150%]">
-            আপনার ক্যারিয়ার
-          </h3>
-          <span class="  font-extrabold text-3xl md:text-[56px] text-[#4285FA] leading-tight">
-            শুরু করার জন্য প্রস্তুত
-          </span>
-
-          <p
-            class="mt-4 max-w-[520px] text-center lg:text-start text-[16px] md:text-lg text-[#38435C]  leading-relaxed">
-            লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
-            ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-          </p>
-
-          <!-- Badge -->
-          <div class="mt-6 relative inline-block">
-            <button
-              class="px-10 py-3 cursor-pointer rounded-full border bg-white border-gray-200 shadow-sm text-black text-[16px] font-medium  hover:shadow-md transition">
-              সীমিত আসন আছে
-            </button>
-
-            <img src="/src/images/r2.svg" class="absolute left-3 top-1/2 -translate-y-1/2 w-4" alt="" />
-          </div>
-
-          <!-- Image -->
-          <div class="mt-6">
-            <img class="w-full max-w-[420px]" src="/src/images/ready.png" alt="ready" />
-          </div>
-        </div>
-
-        <!-- RIGHT -->
+    <!-- Footer Part Start {moazzem} -->
+    <footer
+      class="bg-[#0B2440] rounded-t-[40px] lg:rounded-t-[100px] md:rounded-t-[70px] sm:rounded-t-[60px] py-16 mt-10 lg:mt-[140px]"
+    >
+      <!-- container: lg:max-w-[1320px] and w-full -->
+      <div class="w-full lg:max-w-[1320px] mx-auto px-4">
+        <!-- Top Section: Logo, Contact, App Download -->
         <div
-          class="relative rounded-2xl overflow-hidden shadow-xl w-full p-[2px] max-w-[420px] md:ml-auto mx-auto z-50">
+          class="flex flex-col lg:flex-row lg:justify-between border-b border-[#4285F4] pb-18.5"
+        >
+          <!-- Logo -->
+          <div class="flex justify-center lg:justify-start">
+            <a href="#">
+              <img
+                src="src/images/FooterLogo.png"
+                alt="Creative IT Logo"
+                class="max-w-[150px] lg:max-w-full"
+              />
+            </a>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="text-center lg:text-left mt-6 lg:mt-0">
+            <h4 class="font-semibold text-[16px] text-white capitalize mb-4">
+              যেকোনো প্রশ্নের জন্য, আমাদের সাথে যোগাযোগ করুন
+            </h4>
+            <div
+              class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 sm:gap-6"
+            >
+              <p class="text-[#A9B0B8] text-[16px]">
+                <i class="fa-solid fa-phone-volume mr-2 text-[#4285FA]"></i>
+                ফোন: ০১৭XX XXX XXX
+              </p>
+              <p class="text-[#A9B0B8] text-[16px]">
+                <i class="fa-regular fa-envelope mr-2 text-[#4285FA]"></i>
+                ইমেইল: supposemail.com
+              </p>
+            </div>
+            <div
+              class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 sm:gap-6 mt-3"
+            >
+              <p class="text-[#A9B0B8] text-[16px]">
+                <i class="fa-solid fa-phone-volume mr-2 text-[#4285FA]"></i>
+                ফোন: ০১৭XX XXX XXX
+              </p>
+              <p class="text-[#A9B0B8] text-[16px]">
+                <i class="fa-regular fa-envelope mr-2 text-[#4285FA]"></i>
+                ইমেইল: supposemail.com
+              </p>
+            </div>
+          </div>
+
+          <!-- App Download -->
+          <div class="text-center text-center mt-6 lg:mt-0">
+            <h4 class="text-[16px] text-white mb-3">অ্যাপ ডাউনলোড করুন</h4>
+            <div class="flex justify-center lg:justify-end gap-4">
+              <!-- Android App Box -->
+              <div
+                class="bg-white w-28 h-14 rounded-[10px] flex items-center justify-around px-2"
+              >
+                <img
+                  class="w-8 h-8"
+                  src="src/images/Scanner2.png"
+                  alt="QR Code"
+                />
+                <a href="#">
+                  <img
+                    class="w-8 h-8"
+                    src="src/images/playStore.png"
+                    alt="Google Play"
+                  />
+                </a>
+              </div>
+              <!-- iOS App Box -->
+              <div
+                class="bg-white w-28 h-14 rounded-[10px] flex items-center justify-around px-2"
+              >
+                <img
+                  class="w-8 h-8"
+                  src="src/images/Scanner2.png"
+                  alt="QR Code"
+                />
+                <a href="#">
+                  <img
+                    class="w-8 h-8"
+                    src="src/images/apple.png"
+                    alt="App Store"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch Information: First Row -->
+        <div
+          class="grid lg:grid-cols-3 sm:grid-cols-2 gap-y-[40px] gap-x-[144px] my-[64px]"
+        >
+          <!-- Head Office -->
           <div
-            class="bg-[#F88513] animate-rounded1 right-[-50px] -top-1/2 translate-y-1/2 blur-xl absolute w-[200px] h-[300px] lg:w-[300px] lg:h-[400px] z-[-1]">
+            class="sm:text-start text-center lg:flex lg:flex-col lg:items-center lg:text-left w-full lg:w-auto"
+          >
+            <h4 class="font-semibold text-[16px] text-[#E9F0F8]">
+              <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i> হেড
+              অফিস – মেইন ক্যাম্পাস
+            </h4>
+            <p class="text-[12px] font-medium text-[#A9B0B8] mt-2">
+              মমতাজ প্লাজা, ধানমন্ডি, ঢাকা
+            </p>
+            <p class="text-[12px] font-medium text-[#A9B0B8]">
+              ফোন: +৮৮০ ১৭৭৭৩০৮৭৭৭, +৮৮০ ১৬২৪৬৬৬০০০
+            </p>
           </div>
+
+          <!-- Campus 02 -->
           <div
-            class="bg-[#34A853] animate-rounded2 left-0 -bottom-1/2 -translate-1/2 blur-xl absolute h-[300px] w-[300px] lg:w-[380px] lg:h-[380px] z-[-1]">
-          </div>
-
-          <div class="lg:p-7 p-5 w-full bg-white rounded-2xl">
-            <!-- Corners -->
-
-            <h1 class="  font-semibold text-xl md:text-3xl text-center text-[#1E1E1F]">
-              আপনার আসন এখনই নিশ্চিত করুন
-            </h1>
-
-            <p class="text-center text-sm md:text-base text-[#38435C] mt-2">
-              আপনার পেশাদার ক্যারিয়ার বিনামূল্যে শুরু করুন
+            class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
+            <h4 class="font-semibold text-[16px] text-[#E9F0F8]">
+              <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
+              ক্যাম্পাস ০২ – ধানমন্ডি
+            </h4>
+            <p class="text-[12px] font-medium text-[#A9B0B8] mt-2">
+              মেহের প্লাজা, ধানমন্ডি, ঢাকা
             </p>
-
-            <!-- Inputs -->
-            <div class="space-y-4 mt-6">
-              <div>
-                <label class="text-sm  ">আপনার পুরো নাম</label>
-                <div class="relative mt-1">
-                  <i class="fa-regular fa-user absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                  <input type="text" placeholder="এখানে লিখুন"
-                    class="w-full py-3 pl-10 pr-4 rounded-lg bg-[#F4F8FC] border border-[#A9B0B8] focus:border-[#4285FA] outline-none text-sm" />
-                </div>
-              </div>
-
-              <div>
-                <label class="text-sm  ">ইমেইল ঠিকানা</label>
-                <div class="relative mt-1">
-                  <i class="fa-regular fa-envelope absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                  <input type="email" placeholder="এখানে লিখুন"
-                    class="w-full py-3 pl-10 pr-4 rounded-lg bg-[#F4F8FC] border border-[#A9B0B8] focus:border-[#4285FA] outline-none text-sm" />
-                </div>
-              </div>
-
-              <div>
-                <label class="text-sm  ">ফোন নম্বর</label>
-                <div class="relative mt-1">
-                  <i class="fa-solid fa-phone-volume absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                  <input type="tel" placeholder="এখানে লিখুন"
-                    class="w-full py-3 pl-10 pr-4 rounded-lg bg-[#F4F8FC] border border-[#A9B0B8] focus:border-[#4285FA] outline-none text-sm" />
-                </div>
-              </div>
-
-              <div>
-                <label class="text-sm  ">ক্যারিয়ারের লক্ষ্য</label>
-                <div class="relative mt-1">
-                  <i class="fa-regular fa-user absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                  <input type="text" placeholder="এখানে লিখুন"
-                    class="w-full py-3 pl-10 pr-4 rounded-lg bg-[#F4F8FC] border border-[#A9B0B8] focus:border-[#4285FA] outline-none text-sm" />
-                </div>
-              </div>
-            </div>
-
-            <!-- CTA -->
-            <button class="w-full mt-6 py-3 rounded-lg bg-[#4285FA] text-white font-medium hover:opacity-90 transition">
-              আমার আসন বুক করুন →
-            </button>
-
-            <p class="text-xs text-gray-500 mt-3">
-              এখানে কিছু মানানসই টেক্সট থাকবে
+            <p class="text-[12px] font-medium text-[#A9B0B8]">
+              ফোন: +৮৮০ ১৬২৫৫৫৫৪৪৪, +৮৮০ ১৯৯০৭৭৯৭৮২
             </p>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- ready part end {jeba}-->
-
-  <!-- frequently asked questions part {shakib}  -->
-
-  <section>
-    <div class="relative max-w-[1320px] px-4 lg:px-0 gap-x-[80px] mx-auto">
-      <div class="hidden lg:block absolute left-0 top-[290px]">
-        <img src="./src/images/marketing1.png" alt="arrow" class="h-[280px]" />
-      </div>
-      <div class="max-w-[872px] mx-auto">
-        <div>
-          <div>
-            <h1 class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[150%] font-extrabold">
-              প্রায়শই জিজ্ঞাসিত <span class="text-[#4285FA]">প্রশ্নসমূহ </span>
-            </h1>
-          </div>
-          <p class="mt-3 text-[#38435C] max-w-[809px] mx-auto text-center">
-            লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস পোসুয়ের
-            ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস। ডিয়াম ডিয়াম টেলুস
-            আলট্রিসিস
-          </p>
-        </div>
-        <div class="space-y-6 mt-8">
-          <div id="accordion-collapse-12" data-accordion="collapse"
-            class="rounded-base border-2 border-[#4285FA] overflow-hidden" style="background-color: #f4f8fc">
-            <h2 id="accordion-collapse-heading-12 !border">
-              <button type="button"
-                class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
-                data-accordion-target="#accordion-collapse-body-12" aria-controls="accordion-collapse-body-12"
-                style="background-color: transparent" aria-expanded="true">
-                <span class="text-[#1E1E1F]  text-lg/[150%] font-semibold text-start">
-                  প্রায়শই জিজ্ঞাসিত প্রশ্নের জন্য শিরোনাম এখানে থাকবে</span>
-                <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
-              </button>
-            </h2>
-            <div id="accordion-collapse-body-12" class="hidden border-b-default"
-              aria-labelledby="accordion-collapse-heading-12">
-              <div class="p-2">
-                <p class="mb-2 text-[#38435C]  text-[14px]/[150%] font-normal">
-                  লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                  পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                </p>
-              </div>
-            </div>
-          </div>
-          <div id="accordion-collapse-13" data-accordion="collapse"
-            class="rounded-base border-2 border-[#4285FA] overflow-hidden" style="background-color: #f4f8fc">
-            <h2 id="accordion-collapse-heading-13 !border">
-              <button type="button"
-                class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
-                data-accordion-target="#accordion-collapse-body-13" aria-controls="accordion-collapse-body-13"
-                style="background-color: transparent">
-                <span class="text-[#1E1E1F]  text-lg/[150%] font-semibold text-start">
-                  প্রায়শই জিজ্ঞাসিত প্রশ্নের জন্য শিরোনাম এখানে থাকবে</span>
-                <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
-              </button>
-            </h2>
-            <div id="accordion-collapse-body-13" class="hidden border-b-default"
-              aria-labelledby="accordion-collapse-heading-13">
-              <div class="p-2">
-                <p class="mb-2 text-[#38435C]  text-[14px]/[150%] font-normal">
-                  লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                  পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                </p>
-              </div>
-            </div>
-          </div>
-          <div id="accordion-collapse-14" data-accordion="collapse"
-            class="rounded-base border-2 border-[#4285FA] overflow-hidden" style="background-color: #f4f8fc">
-            <h2 id="accordion-collapse-heading-14 !border">
-              <button type="button"
-                class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
-                data-accordion-target="#accordion-collapse-body-14" aria-controls="accordion-collapse-body-14"
-                style="background-color: transparent">
-                <span class="text-[#1E1E1F]  text-lg/[150%] font-semibold text-start">
-                  প্রায়শই জিজ্ঞাসিত প্রশ্নের জন্য শিরোনাম এখানে থাকবে</span>
-                <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
-              </button>
-            </h2>
-            <div id="accordion-collapse-body-14" class="hidden border-b-default"
-              aria-labelledby="accordion-collapse-heading-14">
-              <div class="p-2">
-                <p class="mb-2 text-[#38435C]  text-[14px]/[150%] font-normal">
-                  লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                  পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                </p>
-              </div>
-            </div>
-          </div>
-          <div id="accordion-collapse-15" data-accordion="collapse"
-            class="rounded-base border-2 border-[#4285FA] overflow-hidden" style="background-color: #f4f8fc">
-            <h2 id="accordion-collapse-heading-15 !border">
-              <button type="button"
-                class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
-                data-accordion-target="#accordion-collapse-body-15" aria-controls="accordion-collapse-body-15"
-                style="background-color: transparent">
-                <span class="text-[#1E1E1F]  text-lg/[150%] font-semibold text-start">
-                  প্রায়শই জিজ্ঞাসিত প্রশ্নের জন্য শিরোনাম এখানে থাকবে</span>
-                <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
-              </button>
-            </h2>
-            <div id="accordion-collapse-body-15" class="hidden border-b-default"
-              aria-labelledby="accordion-collapse-heading-15">
-              <div class="p-2">
-                <p class="mb-2 text-[#38435C]  text-[14px]/[150%] font-normal">
-                  লোরেম ইপসাম ডোলর সিট অ্যামেট কনসেকটetur। ওরসি এস্ট এলিট টিনসিডুন্ট ইউ এস্ট অ্যাট নন সাসিপিট। ফেলিস
-                  পোসুয়ের ম্যাসেনাস ইন্টারডুম সিট ক্রাস। এগেস্টাস সেড নাঙ্ক সোডালেস আর্কু মি ইউট ভোল্পুট লোবারটিস।
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hidden lg:block absolute right-0 top-[290px]">
-        <img src="./src/images/marketing2.png" alt="bar" class="h-[280px] hidden lg:block" />
-      </div>
-    </div>
-  </section>
-
-  <!-- frequently asked questions part end {shakib} -->
-
-  <!-- Footer Part Start {moazzem} -->
-  <footer
-    class="bg-[#0B2440] rounded-t-[40px] lg:rounded-t-[100px] md:rounded-t-[70px] sm:rounded-t-[60px] py-16 mt-10 lg:mt-[140px]">
-    <!-- container: lg:max-w-[1320px] and w-full -->
-    <div class="w-full lg:max-w-[1320px] mx-auto px-4">
-      <!-- Top Section: Logo, Contact, App Download -->
-      <div class="flex flex-col lg:flex-row lg:justify-between border-b border-[#4285F4] pb-18.5">
-        <!-- Logo -->
-        <div class="flex justify-center lg:justify-start">
-          <a href="#">
-            <img src="src/images/FooterLogo.png" alt="Creative IT Logo" class="max-w-[150px] lg:max-w-full" />
-          </a>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="text-center lg:text-left mt-6 lg:mt-0">
-          <h4 class=" font-semibold text-[16px] text-white capitalize mb-4">
-            যেকোনো প্রশ্নের জন্য, আমাদের সাথে যোগাযোগ করুন
-          </h4>
-          <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 sm:gap-6">
-            <p class="text-[#A9B0B8] text-[16px] ">
-              <i class="fa-solid fa-phone-volume mr-2 text-[#4285FA]"></i>
-              ফোন: ০১৭XX XXX XXX
+          <!-- Mirpur Branch -->
+          <div
+            class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
+            <h4 class="font-semibold text-[16px] text-[#E9F0F8]">
+              <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
+              মিরপুর শাখা
+            </h4>
+            <p class="text-[12px] font-medium text-[#A9B0B8] mt-2">
+              এল মেরকাদো, ঢাকা ১২১৬
             </p>
-            <p class="text-[#A9B0B8] text-[16px] ">
-              <i class="fa-regular fa-envelope mr-2 text-[#4285FA]"></i>
-              ইমেইল: supposemail.com
-            </p>
-          </div>
-          <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 sm:gap-6 mt-3">
-            <p class="text-[#A9B0B8] text-[16px] ">
-              <i class="fa-solid fa-phone-volume mr-2 text-[#4285FA]"></i>
-              ফোন: ০১৭XX XXX XXX
-            </p>
-            <p class="text-[#A9B0B8] text-[16px] ">
-              <i class="fa-regular fa-envelope mr-2 text-[#4285FA]"></i>
-              ইমেইল: supposemail.com
+            <p class="text-[12px] font-medium text-[#A9B0B8]">
+              ফোন: +৮৮০১৩ ১০০ ১০০ ২৭, +৮৮০ ১৯২৪ ২২২ ৯৯৯
             </p>
           </div>
         </div>
 
-        <!-- App Download -->
-        <div class="text-center text-center mt-6 lg:mt-0">
-          <h4 class="text-[16px]  text-white mb-3">
-            অ্যাপ ডাউনলোড করুন
-          </h4>
-          <div class="flex justify-center lg:justify-end gap-4">
-            <!-- Android App Box -->
-            <div class="bg-white w-28 h-14 rounded-[10px] flex items-center justify-around px-2">
-              <img class="w-8 h-8" src="src/images/Scanner2.png" alt="QR Code" />
-              <a href="#">
-                <img class="w-8 h-8" src="src/images/playStore.png" alt="Google Play" />
-              </a>
-            </div>
-            <!-- iOS App Box -->
-            <div class="bg-white w-28 h-14 rounded-[10px] flex items-center justify-around px-2">
-              <img class="w-8 h-8" src="src/images/Scanner2.png" alt="QR Code" />
-              <a href="#">
-                <img class="w-8 h-8" src="src/images/apple.png" alt="App Store" />
-              </a>
-            </div>
+        <!-- Branch Information: Second Row -->
+        <div
+          class="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-[40px] gap-x-[144px] lg:gap-x-[40px]"
+        >
+          <!-- Uttara Branch -->
+          <div
+            class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
+            <h4 class="font-semibold text-[16px] text-[#E9F0F8]">
+              <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
+              উত্তরা শাখা
+            </h4>
+            <p
+              class="lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2"
+            >
+              রাজউক রাজিব কসমো শপিং কমপ্লেক্স, উত্তর
+            </p>
+            <p class="lg:text-center text-[12px] font-medium text-[#A9B0B8]">
+              ঢাকা-১২৩০ ফোন: +৮৮০ ১৯৯০৭৭৯৮২৭
+            </p>
+          </div>
+
+          <!-- Chattogram Branch -->
+          <div
+            class="sm:text-start text-center lg:text-start w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
+            <h4 class="font-semibold text-[16px] text-[#E9F0F8]">
+              <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
+              চট্টগ্রাম শাখা
+            </h4>
+            <p
+              class="lg:text-center lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2"
+            >
+              নং ৯, কাপাসগোলা রোড, চক বাজার, চট্টগ্রাম
+            </p>
+            <p class="lg:text-center text-[12px] font-medium text-[#A9B0B8]">
+              ফোন: +৮৮০ ১৮৪৭৪২২৯৬৫, +৮৮০ ১৮৪৭৪২২৯৬৮
+            </p>
+          </div>
+
+          <!-- Panchagarh Branch -->
+          <div
+            class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
+            <h4 class="font-semibold text-[16px] text-[#E9F0F8]">
+              <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
+              পঞ্চগড় শাখা
+            </h4>
+            <p
+              class="lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2"
+            >
+              আব্দুল আজিজ সুপার মার্কেট, পঞ্চগড়
+            </p>
+            <p class="lg:text-center text-[12px] font-medium text-[#A9B0B8]">
+              বাজার, ফোন: ০১৭০৪০৪৮৩৮৩
+            </p>
+          </div>
+
+          <!-- Canada Branch -->
+          <div
+            class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
+            <h4 class="font-semibold text-[16px] text-[#E9F0F8]">
+              <i
+                class="fa-solid lg:text-center fa-location-dot text-[#4285FA] mr-1"
+              ></i>
+              কানাডা শাখা
+            </h4>
+            <p
+              class="lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2"
+            >
+              ৬১ লেকউড অ্যাভিনিউ, সেন্ট জন, নিউ ব্রান্সউইক E2J 3N9
+            </p>
+            <p class="lg:text-center text-[12px] font-medium text-[#A9B0B8]">
+              কানাডা, ফোন: +১ ৬৭২-৩৭৭-৯৯৭৭
+            </p>
           </div>
         </div>
       </div>
+    </footer>
+    <!-- Footer Part End    {moazzem} -->
 
-      <!-- Branch Information: First Row -->
-      <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-y-[40px] gap-x-[144px] my-[64px]">
-        <!-- Head Office -->
-        <div class="sm:text-start text-center lg:flex lg:flex-col lg:items-center lg:text-left w-full lg:w-auto">
-          <h4 class=" font-semibold text-[16px] text-[#E9F0F8]">
-            <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i> হেড অফিস – মেইন ক্যাম্পাস
-          </h4>
-          <p class="  text-[12px] font-medium text-[#A9B0B8] mt-2">
-            মমতাজ প্লাজা, ধানমন্ডি, ঢাকা
-          </p>
-          <p class="  text-[12px] font-medium text-[#A9B0B8]">
-            ফোন: +৮৮০ ১৭৭৭৩০৮৭৭৭, +৮৮০ ১৬২৪৬৬৬০০০
-          </p>
-        </div>
-
-        <!-- Campus 02 -->
-        <div class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
-          <h4 class=" font-semibold text-[16px] text-[#E9F0F8]">
-            <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
-            ক্যাম্পাস ০২ – ধানমন্ডি
-          </h4>
-          <p class="  text-[12px] font-medium text-[#A9B0B8] mt-2">
-            মেহের প্লাজা, ধানমন্ডি, ঢাকা
-          </p>
-          <p class="  text-[12px] font-medium text-[#A9B0B8]">
-            ফোন: +৮৮০ ১৬২৫৫৫৫৪৪৪, +৮৮০ ১৯৯০৭৭৯৭৮২
-          </p>
-        </div>
-
-        <!-- Mirpur Branch -->
-        <div class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
-          <h4 class=" font-semibold text-[16px] text-[#E9F0F8]">
-            <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
-            মিরপুর শাখা
-          </h4>
-          <p class="  text-[12px] font-medium text-[#A9B0B8] mt-2">
-            এল মেরকাদো, ঢাকা ১২১৬
-          </p>
-          <p class="  text-[12px] font-medium text-[#A9B0B8]">
-            ফোন: +৮৮০১৩ ১০০ ১০০ ২৭, +৮৮০ ১৯২৪ ২২২ ৯৯৯
-          </p>
-        </div>
-      </div>
-
-      <!-- Branch Information: Second Row -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-[40px] gap-x-[144px] lg:gap-x-[40px]">
-        <!-- Uttara Branch -->
-        <div class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
-          <h4 class=" font-semibold text-[16px] text-[#E9F0F8]">
-            <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
-            উত্তরা শাখা
-          </h4>
-          <p class="  lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2">
-            রাজউক রাজিব কসমো শপিং কমপ্লেক্স, উত্তর
-          </p>
-          <p class="  lg:text-center text-[12px] font-medium text-[#A9B0B8]">
-            ঢাকা-১২৩০ ফোন: +৮৮০ ১৯৯০৭৭৯৮২৭
-          </p>
-        </div>
-
-        <!-- Chattogram Branch -->
-        <div class="sm:text-start text-center lg:text-start w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
-          <h4 class=" font-semibold text-[16px] text-[#E9F0F8]">
-            <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
-            চট্টগ্রাম শাখা
-          </h4>
-          <p class="  lg:text-center lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2">
-            নং ৯, কাপাসগোলা রোড, চক বাজার, চট্টগ্রাম
-          </p>
-          <p class="  lg:text-center text-[12px] font-medium text-[#A9B0B8]">
-            ফোন: +৮৮০ ১৮৪৭৪২২৯৬৫, +৮৮০ ১৮৪৭৪২২৯৬৮
-          </p>
-        </div>
-
-        <!-- Panchagarh Branch -->
-        <div class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
-          <h4 class=" font-semibold text-[16px] text-[#E9F0F8]">
-            <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
-            পঞ্চগড় শাখা
-          </h4>
-          <p class="  lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2">
-            আব্দুল আজিজ সুপার মার্কেট, পঞ্চগড়
-          </p>
-          <p class="  lg:text-center text-[12px] font-medium text-[#A9B0B8]">
-            বাজার, ফোন: ০১৭০৪০৪৮৩৮৩
-          </p>
-        </div>
-
-        <!-- Canada Branch -->
-        <div class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
-          <h4 class=" font-semibold text-[16px] text-[#E9F0F8]">
-            <i class="fa-solid lg:text-center fa-location-dot text-[#4285FA] mr-1"></i>
-            কানাডা শাখা
-          </h4>
-          <p class="  lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2">
-            ৬১ লেকউড অ্যাভিনিউ, সেন্ট জন, নিউ ব্রান্সউইক E2J 3N9
-          </p>
-          <p class="  lg:text-center text-[12px] font-medium text-[#A9B0B8]">
-            কানাডা, ফোন: +১ ৬৭২-৩৭৭-৯৯৭৭
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer Part End    {moazzem} -->
-
-  <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-  <script src="./src/script.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="./src/script.js"></script>
+  </body>
 </html>
