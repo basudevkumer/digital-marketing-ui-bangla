@@ -1,5 +1,23 @@
 // for accordion
 
+document.querySelectorAll(".pm-accordion button").forEach((button) => {
+
+  const icon = button.querySelector(".pm-icon");
+  const targetId = button.getAttribute("data-accordion-target");
+  const target = document.querySelector(targetId);
+
+  button.addEventListener("click", () => {
+
+    const isHidden = target.classList.contains("hidden");
+
+    target.classList.toggle("hidden");
+
+    icon.textContent = isHidden ? "-" : "+";
+
+  });
+
+});
+
 document.querySelectorAll("[data-accordion-icon]").forEach((icon) => {
   const button = icon.closest("button");
   const targetId = button.getAttribute("data-accordion-target");
